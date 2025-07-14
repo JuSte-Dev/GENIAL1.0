@@ -18,70 +18,44 @@ const Login = () => {
     setError('');
     
     try {
-      // Connexion rapide selon le type d'utilisateur avec utilisateurs fictifs
-      const testCredentials = {
-        client: { 
-          email: 'client@test.com', 
-          password: 'password123',
-          userData: {
-            id: '1',
-            name: 'Client Test',
-            email: 'client@test.com',
-            role: 'client'
-          }
+      // Utilisateurs de test avec données complètes
+      const testUsers = {
+        client: {
+          id: '1',
+          name: 'Client Test',
+          email: 'client@test.com',
+          role: 'client'
         },
-        producer: { 
-          email: 'producer@test.com', 
-          password: 'password123',
-          userData: {
-            id: '2',
-            name: 'Producteur Test',
-            email: 'producer@test.com',
-            role: 'producer'
-          }
+        producer: {
+          id: '2',
+          name: 'Producteur Test',
+          email: 'producer@test.com',
+          role: 'producer'
         }
       };
       
-      const { userData } = testCredentials[userType];
+      const userData = testUsers[userType];
+      const testToken = `test-token-${userType}`;
       
-      // Simuler la connexion pour les tests
-      localStorage.setItem('token', 'test-token-' + userType);
+      // Sauvegarder les données de test
+      localStorage.setItem('token', testToken);
       localStorage.setItem('user', JSON.stringify(userData));
       
-      // Utiliser directement login du contexte avec connexion simulée
-      // Pour le test, on simule une connexion réussie
-      try {
-        const result = await login(testCredentials[userType].email, testCredentials[userType].password);
-        // Si l'API ne fonctionne pas, on force la connexion pour les tests
-        if (!result.success) {
-          // Connexion forcée pour les tests
-          localStorage.setItem('token', 'test-token-' + userType);
-          
-          // Redirection selon le rôle
-          if (userType === 'client') {
-            navigate('/profile');
-          } else if (userType === 'producer') {
-            navigate('/producer-dashboard');
-          }
-        } else {
-          // Redirection selon le rôle après connexion réussie
-          if (userData.role === 'client') {
-            navigate('/profile');
-          } else if (userData.role === 'producer') {
-            navigate('/producer-dashboard');
-          }
-        }
-      } catch (err) {
-        // En cas d'erreur API, connexion simulée pour les tests
-        localStorage.setItem('token', 'test-token-' + userType);
-        
+      // Simuler la connexion réussie dans le contexte Auth
+      const result = await login(userData.email, 'password123');
+      
+      if (result.success) {
+        // Navigation selon le rôle
         if (userType === 'client') {
           navigate('/profile');
         } else if (userType === 'producer') {
           navigate('/producer-dashboard');
         }
+      } else {
+        setError('Erreur de connexion test');
       }
     } catch (err) {
+      console.error('Test login error:', err);
       setError('Erreur de connexion rapide');
     } finally {
       setLoading(false);
