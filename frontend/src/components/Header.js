@@ -212,7 +212,7 @@ const Header = ({ cart = {}, getTotalItems = () => 0, setShowCart = () => {} }) 
                 </Link>
                 <Link
                   to="/register"
-                  className="px-4 py-2 text-sm font-medium bg-neon-blue text-white rounded-md hover:bg-blue-600 transition-colors"
+                  className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-neon-blue border border-gray-300 rounded-md hover:border-neon-blue transition-colors"
                 >
                   Inscription
                 </Link>
