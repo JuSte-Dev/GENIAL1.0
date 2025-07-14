@@ -161,7 +161,7 @@ const Home = () => {
               <div className="absolute bottom-6 left-6 right-6 text-white">
                 <div className="flex items-center mb-3">
                   <ShoppingBasket className="w-8 h-8 text-neon-blue mr-3" />
-                  <span className="text-lg font-semibold">10h00 - 19h00</span>
+                  <span className="text-lg font-semibold">7h00 - 22h30</span>
                 </div>
                 <h3 className="text-3xl font-bold mb-3 text-white">Marché d'exception</h3>
                 <p className="text-lg text-gray-200 mb-4">
