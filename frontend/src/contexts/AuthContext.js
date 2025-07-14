@@ -17,13 +17,42 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const token = localStorage.getItem('token');
-    if (token) {
-      axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
-      fetchUser();
-    } else {
-      setLoading(false);
-    }
+    const initializeAuth = async () => {
+      try {
+        const token = localStorage.getItem('token');
+        const savedUser = localStorage.getItem('user');
+        
+        if (token && savedUser) {
+          // Vérifier si c'est un token de test
+          if (token.startsWith('test-token-')) {
+            const userData = JSON.parse(savedUser);
+            setUser(userData);
+            setIsAuthenticated(true);
+            axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+          } else {
+            // Token normal, vérifier avec l'API
+            axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+            
+            try {
+              const response = await axios.get('/auth/me');
+              setUser(response.data);
+              setIsAuthenticated(true);
+            } catch (error) {
+              console.error('Token validation failed:', error);
+              localStorage.removeItem('token');
+              localStorage.removeItem('user');
+              delete axios.defaults.headers.common['Authorization'];
+            }
+          }
+        }
+      } catch (error) {
+        console.error('Auth initialization error:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    initializeAuth();
   }, []);
 
   const fetchUser = async () => {
