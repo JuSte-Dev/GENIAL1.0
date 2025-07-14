@@ -1010,19 +1010,19 @@ const Store = () => {
           </div>
         </div>
 
-        {/* Products Grid - 2 products per row with smaller cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Products Grid - 2 products per row with compact horizontal cards */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           {filteredProducts.map((product) => (
-            <div key={product.id} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
-              <div className="flex">
+            <div key={product.id} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden">
+              <div className="flex h-32">
                 {/* Product Image - Left side */}
-                <div className="relative w-1/3 h-40 overflow-hidden">
+                <div className="relative w-32 h-32 flex-shrink-0 overflow-hidden">
                   <img
                     src={product.image}
                     alt={product.name}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute top-2 right-2">
+                  <div className="absolute top-1 right-1">
                     <div className="bg-white/90 backdrop-blur-sm rounded-full px-2 py-1">
                       <span className="text-xs font-semibold text-gray-900">{product.price}€</span>
                     </div>
@@ -1030,32 +1030,35 @@ const Store = () => {
                 </div>
                 
                 {/* Product Info - Right side */}
-                <div className="flex-1 p-4">
-                  <h3 className="text-base font-bold text-gray-900 mb-1">{product.name}</h3>
-                  <p className="text-xs text-gray-600 mb-2 line-clamp-2">{product.description}</p>
-                  
-                  <div className="flex items-center justify-between mb-2">
-                    <div>
-                      <div className="text-lg font-bold text-primary">{product.price}€</div>
-                      <div className="text-xs text-gray-500">par {product.unit}</div>
+                <div className="flex-1 p-3 flex flex-col justify-between">
+                  <div>
+                    <h3 className="text-sm font-bold text-gray-900 mb-1 line-clamp-1">{product.name}</h3>
+                    <p className="text-xs text-gray-600 mb-2 line-clamp-2">{product.description}</p>
+                    
+                    <div className="flex items-center justify-between mb-1">
+                      <div>
+                        <div className="text-base font-bold text-primary">{product.price}€</div>
+                        <div className="text-xs text-gray-500">par {product.unit}</div>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-xs text-gray-500 truncate max-w-[80px]">{product.origin}</div>
+                        {product.producer && (
+                          <div className="text-xs text-gray-400 truncate max-w-[80px]">{product.producer}</div>
+                        )}
+                      </div>
                     </div>
-                    <div className="text-right">
-                      <div className="text-xs text-gray-500">{product.origin}</div>
-                      {product.producer && (
-                        <div className="text-xs text-gray-400 mt-1 truncate max-w-[120px]">{product.producer}</div>
-                      )}
-                    </div>
-                  </div>
 
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs text-gray-500">Stock: {product.stock}</span>
-                    <div className="flex items-center">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-3 h-3 text-yellow-400 fill-current" />
-                      ))}
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-xs text-gray-500">Stock: {product.stock}</span>
+                      <div className="flex items-center">
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} className="w-2.5 h-2.5 text-yellow-400 fill-current" />
+                        ))}
+                      </div>
                     </div>
                   </div>
                   
+                  {/* Add to cart section */}
                   <div className="flex items-center justify-between">
                     {cart[product.id] > 0 ? (
                       <div className="flex items-center space-x-2">
@@ -1078,9 +1081,9 @@ const Store = () => {
                     ) : (
                       <button
                         onClick={() => addToCart(product.id)}
-                        className="bg-primary hover:bg-gray-800 text-white px-4 py-2 rounded-lg font-medium transition-colors text-sm"
+                        className="bg-primary hover:bg-gray-800 text-white px-3 py-1.5 rounded-lg font-medium transition-colors text-xs flex items-center"
                       >
-                        <Plus className="w-3 h-3 mr-1 inline" />
+                        <Plus className="w-3 h-3 mr-1" />
                         Ajouter
                       </button>
                     )}
