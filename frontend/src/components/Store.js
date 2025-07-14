@@ -865,6 +865,8 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
       return sum + (product ? product.price * quantity : 0);
     }, 0);
   };
+    }, 0);
+  };
 
   const handleCheckout = () => {
     if (getTotalItems() > 0) {
