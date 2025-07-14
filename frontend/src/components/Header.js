@@ -206,15 +206,17 @@ const Header = ({ cart = {}, getTotalItems = () => 0, setShowCart = () => {} }) 
               <div className="flex items-center space-x-2">
                 <Link
                   to="/login"
-                  className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-neon-blue transition-colors"
+                  className="flex items-center justify-center w-10 h-10 text-gray-600 hover:text-neon-blue hover:bg-blue-50 rounded-md transition-colors"
+                  title="Connexion"
                 >
-                  Connexion
+                  <User className="w-5 h-5" />
                 </Link>
                 <Link
                   to="/register"
-                  className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-neon-blue border border-gray-300 rounded-md hover:border-neon-blue transition-colors"
+                  className="flex items-center justify-center w-10 h-10 text-gray-600 hover:text-neon-blue hover:bg-blue-50 rounded-md border border-gray-300 hover:border-neon-blue transition-colors"
+                  title="Inscription"
                 >
-                  Inscription
+                  <User className="w-5 h-5" />
                 </Link>
               </div>
             )}
