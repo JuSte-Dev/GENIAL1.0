@@ -70,9 +70,14 @@ const Register = () => {
               <span className="text-white font-bold text-2xl">G</span>
             </div>
           </div>
-          <h2 className="mt-6 text-center text-3xl font-bold text-gray-900">
-            Rejoignez GENIAL
-          </h2>
+          <div className="text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-2">
+              Rejoindre GENIAL
+            </h2>
+            <p className="text-gray-600">
+              Créez votre compte pour accéder à notre univers de produits d'exception
+            </p>
+          </div>
           <p className="mt-2 text-center text-sm text-gray-600">
             Ou{' '}
             <Link
