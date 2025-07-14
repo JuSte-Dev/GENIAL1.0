@@ -391,14 +391,14 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
       stock: 20
     },
 
-    // Fromages
+    // Fromages - with improved images
     {
       id: 30,
       name: 'Comté AOP 24 mois',
       category: 'fromages',
       price: 42.00,
       unit: 'kg',
-      image: 'https://images.pexels.com/photos/773253/pexels-photo-773253.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=2',
+      image: 'https://images.unsplash.com/photo-1752401984776-edc407a13e1e',
       description: 'Comté AOP affiné 24 mois, fruité et typé',
       origin: 'France - Jura',
       producer: 'Fromagerie du Jura',
@@ -410,7 +410,7 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
       category: 'fromages',
       price: 38.00,
       unit: 'kg',
-      image: 'https://images.pexels.com/photos/1070850/pexels-photo-1070850.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=2',
+      image: 'https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d',
       description: 'Roquefort Papillon AOP, caves de Roquefort',
       origin: 'France - Aveyron',
       producer: 'Caves de Roquefort',
@@ -422,7 +422,7 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
       category: 'fromages',
       price: 28.00,
       unit: 'kg',
-      image: 'https://images.pexels.com/photos/1070850/pexels-photo-1070850.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=2',
+      image: 'https://images.unsplash.com/photo-1589881133595-a3c085cb731d',
       description: 'Fromage de chèvre cendré, pâte crémeuse',
       origin: 'France - Loire',
       producer: 'Ferme Caprine de Loire',
@@ -434,7 +434,7 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
       category: 'fromages',
       price: 24.00,
       unit: 'kg',
-      image: 'https://images.pexels.com/photos/1070850/pexels-photo-1070850.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=2',
+      image: 'https://images.pexels.com/photos/302457/pexels-photo-302457.jpeg',
       description: 'Camembert de Normandie AOP au lait cru',
       origin: 'France - Normandie',
       producer: 'Fromagerie Normande',
