@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Search, Filter, ShoppingCart, Plus, Minus, Star, CreditCard, CheckCircle, MapPin, Clock, Navigation } from 'lucide-react';
 import { apiService } from '../utils/api';
+import { useNotification } from '../contexts/NotificationContext';
 
 const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
+  const { addOrderNotification } = useNotification();
   const [products, setProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
