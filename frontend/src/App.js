@@ -57,6 +57,7 @@ function AppContent() {
 
   return (
     <div className="App">
+      <NotificationBar />
       <Header 
         cart={globalCart} 
         getTotalItems={getTotalItems} 
