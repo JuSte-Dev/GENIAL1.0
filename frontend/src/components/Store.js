@@ -255,14 +255,14 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
       stock: 10
     },
 
-    // Viandes
+    // Viandes - with improved images
     {
       id: 19,
       name: 'Côte de bœuf Wagyu',
       category: 'viandes',
       price: 120.00,
       unit: 'kg',
-      image: 'https://images.unsplash.com/photo-1590457075683-06eb6c958aa5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMGZpc2h8ZW58MHx8fHdoaXRlfDE3NTI0MjE3NzJ8MA&ixlib=rb-4.1.0&q=85',
+      image: 'https://images.unsplash.com/photo-1551028150-64b9f398f678?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxtZWF0fGVufDB8fHx8MTc1MjUwNDk4OXww&ixlib=rb-4.1.0&q=85',
       description: 'Côte de bœuf Wagyu A5, persillage exceptionnel',
       origin: 'Japon',
       producer: 'Élevage Kobe Premium',
@@ -274,7 +274,7 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
       category: 'viandes',
       price: 32.00,
       unit: 'kg',
-      image: 'https://images.unsplash.com/photo-1513615147033-3ed2afaaae8f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwzfHxwcmVtaXVtJTIwbWVhdHxlbnwwfHx8d2hpdGV8MTc1MjQyMTc3Mnww&ixlib=rb-4.1.0&q=85',
+      image: 'https://images.unsplash.com/photo-1448907503123-67254d59ca4f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwyfHxtZWF0fGVufDB8fHx8MTc1MjUwNDk4OXww&ixlib=rb-4.1.0&q=85',
       description: 'Gigot d\'agneau de Sisteron IGP',
       origin: 'France - Alpes',
       producer: 'Bergerie des Alpes - Élevage Traditionnel',
@@ -286,7 +286,7 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
       category: 'viandes',
       price: 18.50,
       unit: 'kg',
-      image: 'https://images.unsplash.com/photo-1513615147033-3ed2afaaae8f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwzfHxwcmVtaXVtJTIwbWVhdHxlbnwwfHx8d2hpdGV8MTc1MjQyMTc3Mnww&ixlib=rb-4.1.0&q=85',
+      image: 'https://images.unsplash.com/photo-1560781290-7dc94c0f8f4f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwzfHxtZWF0fGVufDB8fHx8MTc1MjUwNDk4OXww&ixlib=rb-4.1.0&q=85',
       description: 'Poulet fermier Label Rouge élevé au grain',
       origin: 'France - Bresse',
       producer: 'Ferme Avicole de Bresse - AOC',
@@ -298,7 +298,7 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
       category: 'viandes',
       price: 22.00,
       unit: 'kg',
-      image: 'https://images.unsplash.com/photo-1513615147033-3ed2afaaae8f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwzfHxwcmVtaXVtJTIwbWVhdHxlbnwwfHx8d2hpdGV8MTc1MjQyMTc3Mnww&ixlib=rb-4.1.0&q=85',
+      image: 'https://images.unsplash.com/photo-1551028150-64b9f398f678?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxtZWF0fGVufDB8fHx8MTc1MjUwNDk4OXww&ixlib=rb-4.1.0&q=85',
       description: 'Canard de Barbarie fermier, magrets et cuisses',
       origin: 'France - Sud-Ouest',
       producer: 'Élevage du Gers - Canards Fermiers',
@@ -310,7 +310,7 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
       category: 'viandes',
       price: 38.00,
       unit: 'kg',
-      image: 'https://images.unsplash.com/photo-1513615147033-3ed2afaaae8f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwzfHxwcmVtaXVtJTIwbWVhdHxlbnwwfHx8d2hpdGV8MTc1MjQyMTc3Mnww&ixlib=rb-4.1.0&q=85',
+      image: 'https://images.unsplash.com/photo-1448907503123-67254d59ca4f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwyfHxtZWF0fGVufDB8fHx8MTc1MjUwNDk4OXww&ixlib=rb-4.1.0&q=85',
       description: 'Veau de lait élevé sous la mère, tendreté garantie',
       origin: 'France - Limousin',
       producer: 'Élevage Limousin - Veau Traditionnel',
