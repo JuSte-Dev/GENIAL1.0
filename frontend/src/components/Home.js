@@ -128,8 +128,8 @@ const Home = () => {
             {/* Lunch/Deli */}
             <div className="group relative h-96 rounded-2xl overflow-hidden cursor-pointer">
               <img 
-                src="https://images.unsplash.com/photo-1748335083329-f9cc0e65812b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxhcnRpc2FuJTIwbHVuY2h8ZW58MHx8fHwxNzUyNTExMTc2fDA&ixlib=rb-4.1.0&q=85"
-                alt="Lunch artisanal"
+                src="https://images.unsplash.com/photo-1735353783469-52314e87dd3f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwxfHxkdWNrJTIwc2FsYWR8ZW58MHx8fHwxNzUyNTE3MDU1fDA&ixlib=rb-4.1.0&q=85"
+                alt="Salade du Gers gourmande"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
@@ -140,11 +140,11 @@ const Home = () => {
                 </div>
                 <h3 className="text-3xl font-bold mb-3 text-white">Lunch gourmand</h3>
                 <p className="text-lg text-gray-200 mb-4">
-                  Savourez nos sandwichs artisanaux, salades fraîches et plats du jour
+                  Savourez nos salades du Gers, sandwichs artisanaux et plats du jour préparés avec amour
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-neon-blue/20 rounded-full text-sm border border-neon-blue/30">Focaccia maison</span>
-                  <span className="px-3 py-1 bg-neon-blue/20 rounded-full text-sm border border-neon-blue/30">Salades</span>
+                  <span className="px-3 py-1 bg-neon-blue/20 rounded-full text-sm border border-neon-blue/30">Salades du Gers</span>
+                  <span className="px-3 py-1 bg-neon-blue/20 rounded-full text-sm border border-neon-blue/30">Sandwichs artisanaux</span>
                   <span className="px-3 py-1 bg-neon-blue/20 rounded-full text-sm border border-neon-blue/30">Plats du jour</span>
                 </div>
               </div>
