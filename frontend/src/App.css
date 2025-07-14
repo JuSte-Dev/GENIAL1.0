@@ -21,10 +21,24 @@ body {
   flex-direction: column;
 }
 
-/* Notting Hill color scheme */
+/* Store cursor for cart icon */
+.store-cursor {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>'), auto;
+}
+
+.store-cursor button,
+.store-cursor a,
+.store-cursor input,
+.store-cursor select {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>'), pointer;
+}
+
+/* Notting Hill color scheme with neon blue */
 :root {
   --primary-dark: #222222;
   --primary-white: #ffffff;
+  --neon-blue: #0066ff;
+  --neon-blue-hover: #0052cc;
   --gray-100: #f8f9fa;
   --gray-200: #e9ecef;
   --gray-300: #dee2e6;
@@ -83,24 +97,26 @@ p {
   line-height: 1.5;
 }
 
-.btn-primary {
-  background-color: var(--primary-dark);
+.btn-primary,
+.btn-neon {
+  background-color: var(--neon-blue);
   color: var(--primary-white);
 }
 
-.btn-primary:hover {
-  background-color: var(--gray-800);
+.btn-primary:hover,
+.btn-neon:hover {
+  background-color: var(--neon-blue-hover);
   transform: translateY(-1px);
 }
 
 .btn-secondary {
   background-color: var(--primary-white);
-  color: var(--primary-dark);
-  border: 2px solid var(--primary-dark);
+  color: var(--neon-blue);
+  border: 2px solid var(--neon-blue);
 }
 
 .btn-secondary:hover {
-  background-color: var(--primary-dark);
+  background-color: var(--neon-blue);
   color: var(--primary-white);
 }
 
