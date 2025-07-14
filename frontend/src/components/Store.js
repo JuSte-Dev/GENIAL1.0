@@ -1053,8 +1053,8 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
                     </div>
                   </div>
                   
-                  {/* Add to cart section - ALWAYS VISIBLE */}
-                  <div className="flex items-center justify-center mt-2">
+                  {/* Add to cart section - BETTER POSITIONING */}
+                  <div className="flex items-center justify-center w-full">
                     {(cart && cart[product.id] && cart[product.id] > 0) ? (
                       <div className="flex items-center space-x-2">
                         <button
@@ -1076,7 +1076,7 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
                     ) : (
                       <button
                         onClick={() => addToCart(product.id)}
-                        className="bg-primary hover:bg-gray-800 text-white px-4 py-2 rounded-lg font-medium transition-colors text-sm flex items-center"
+                        className="bg-primary hover:bg-gray-800 text-white px-4 py-2 rounded-lg font-medium transition-colors text-sm flex items-center w-full justify-center"
                       >
                         <Plus className="w-4 h-4 mr-1" />
                         Ajouter
