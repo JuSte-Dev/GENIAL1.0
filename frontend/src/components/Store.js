@@ -2,17 +2,19 @@ import React, { useState, useEffect } from 'react';
 import { Search, Filter, ShoppingCart, Plus, Minus, Star, CreditCard, CheckCircle, MapPin, Clock, Navigation } from 'lucide-react';
 import { apiService } from '../utils/api';
 
-const Store = () => {
+const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
   const [products, setProducts] = useState([]);
-  const [cart, setCart] = useState({});
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
-  const [showCart, setShowCart] = useState(false);
   const [showPayment, setShowPayment] = useState(false);
   const [showConfirmation, setShowConfirmation] = useState(false);
   const [orderNumber, setOrderNumber] = useState('');
   const [preparationTime, setPreparationTime] = useState(0);
   const [loading, setLoading] = useState(true);
+
+  // Utiliser le panier global au lieu du panier local
+  const cart = globalCart || {};
+  const setCart = setGlobalCart;
 
   const categories = [
     { id: 'all', name: 'Tous', image: 'https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&dpr=2' },
