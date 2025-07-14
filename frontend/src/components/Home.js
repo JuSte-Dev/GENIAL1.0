@@ -163,7 +163,7 @@ const Home = () => {
                   <ShoppingBasket className="w-8 h-8 text-neon-blue mr-3" />
                   <span className="text-lg font-semibold">10h00 - 19h00</span>
                 </div>
-                <h3 className="text-3xl font-bold mb-3">Marché d'exception</h3>
+                <h3 className="text-3xl font-bold mb-3 text-white">Marché d'exception</h3>
                 <p className="text-lg text-gray-200 mb-4">
                   Découvrez nos produits frais sélectionnés chez les meilleurs producteurs
                 </p>
