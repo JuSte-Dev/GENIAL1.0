@@ -28,15 +28,69 @@ const Profile = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const [loyaltyResponse, ordersResponse] = await Promise.all([
-          apiService.getLoyaltyTransactions(),
-          apiService.getOrders()
-        ]);
+        const token = localStorage.getItem('token');
         
-        setLoyaltyTransactions(loyaltyResponse.data);
-        setOrders(ordersResponse.data);
+        // Si c'est un token de test, utiliser des données fictives
+        if (token && token.startsWith('test-token-')) {
+          // Données de test pour le profil client
+          setLoyaltyTransactions([
+            {
+              id: 1,
+              type: 'earned',
+              points: 50,
+              description: 'Achat en magasin',
+              date: new Date().toISOString(),
+              amount: 125.50
+            },
+            {
+              id: 2,
+              type: 'earned',
+              points: 25,
+              description: 'Commande en ligne',
+              date: new Date(Date.now() - 86400000).toISOString(),
+              amount: 67.80
+            }
+          ]);
+          
+          setOrders([
+            {
+              id: 1,
+              order_number: 'CMD123456',
+              status: 'completed',
+              total_amount: 125.50,
+              created_at: new Date().toISOString(),
+              items: [
+                { name: 'Saumon fumé', quantity: 1, price: 85.00 },
+                { name: 'Fromage Comté', quantity: 1, price: 40.50 }
+              ]
+            },
+            {
+              id: 2,
+              order_number: 'CMD123455',
+              status: 'en_preparation',
+              total_amount: 67.80,
+              created_at: new Date(Date.now() - 86400000).toISOString(),
+              items: [
+                { name: 'Tomates cerises bio', quantity: 2, price: 17.00 },
+                { name: 'Jambon de Bayonne', quantity: 1, price: 50.80 }
+              ]
+            }
+          ]);
+        } else {
+          // Appels API normaux pour les vrais utilisateurs
+          const [loyaltyResponse, ordersResponse] = await Promise.all([
+            apiService.getLoyaltyTransactions(),
+            apiService.getOrders()
+          ]);
+          
+          setLoyaltyTransactions(loyaltyResponse.data);
+          setOrders(ordersResponse.data);
+        }
       } catch (error) {
         console.error('Error fetching profile data:', error);
+        // En cas d'erreur, afficher des données vides
+        setLoyaltyTransactions([]);
+        setOrders([]);
       } finally {
         setLoading(false);
       }
