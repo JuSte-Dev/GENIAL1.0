@@ -52,6 +52,13 @@ const Home = () => {
         
         <div className="relative container mx-auto px-4 py-20 z-10">
           <div className="max-w-4xl mx-auto text-center">
+            {/* Logo Caddie */}
+            <div className="flex justify-center mb-6">
+              <div className="w-20 h-20 bg-neon-blue rounded-full flex items-center justify-center shadow-lg">
+                <ShoppingCart className="w-10 h-10 text-white" />
+              </div>
+            </div>
+            
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               <span className="text-white">GENIAL</span>
               <span className="block text-lg md:text-xl font-normal mt-2 text-gray-300">
@@ -65,7 +72,7 @@ const Home = () => {
               Du café matinal à l'apéro dînatoire, vivez une expérience unique entouré de produits d'exception
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/store" className="btn btn-primary text-lg px-8 py-3">
+              <Link to="/store" className="btn btn-neon text-lg px-8 py-3">
                 <ShoppingCart className="w-5 h-5 mr-2" />
                 Commander en ligne
               </Link>
