@@ -41,7 +41,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-gray-900 to-gray-800 text-white overflow-hidden min-h-screen flex items-center">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden w-full">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -52,7 +52,7 @@ const Home = () => {
           <div className="absolute inset-0 bg-black opacity-60"></div>
         </div>
         
-        <div className="relative container mx-auto px-4 py-20 z-10">
+        <div className="relative w-full max-w-none px-4 sm:px-6 lg:px-8 py-20 z-10">
           <div className="max-w-4xl mx-auto text-center">
             {/* Logo Caddie */}
             <div className="flex justify-center mb-6">
@@ -61,16 +61,16 @@ const Home = () => {
               </div>
             </div>
             
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
               <span className="text-white">GENIAL</span>
               <span className="block text-lg md:text-xl font-normal mt-2 text-gray-300">
                 Un nouveau lieu de vie
               </span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-gray-200">
+            <p className="text-lg sm:text-xl md:text-2xl mb-8 text-gray-200">
               Marché frais • Épicerie fine • Restauration
             </p>
-            <p className="text-lg mb-10 text-gray-300 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg mb-10 text-gray-300 max-w-2xl mx-auto">
               Du café matinal à l'apéro dînatoire, vivez une expérience unique entouré de produits d'exception
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
