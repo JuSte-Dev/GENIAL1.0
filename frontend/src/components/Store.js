@@ -1051,9 +1051,9 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
                     </div>
                   </div>
                   
-                  {/* Add to cart section - FIXING THE MISSING BUTTONS */}
+                  {/* Add to cart section - SIMPLIFIED LOGIC */}
                   <div className="flex items-center justify-between">
-                    {cart && cart[product.id] > 0 ? (
+                    {(cart && cart[product.id] && cart[product.id] > 0) ? (
                       <div className="flex items-center space-x-2">
                         <button
                           onClick={() => removeFromCart(product.id)}
