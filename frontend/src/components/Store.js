@@ -789,40 +789,40 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
       stock: 15
     },
     {
-      id: 61,
-      name: 'Miel de lavande',
-      category: 'epicerie',
-      price: 12.00,
-      unit: 'pot 250g',
-      image: 'https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=2',
-      description: 'Miel de lavande de Provence, récolte 2024',
-      origin: 'France - Provence',
-      producer: 'Ruchers de Provence',
-      stock: 25
-    },
-    {
       id: 62,
-      name: 'Confit de canard sous vide',
+      name: 'Miel de lavande de Provence',
       category: 'epicerie',
-      price: 28.00,
-      unit: '4 cuisses',
-      image: 'https://images.pexels.com/photos/6210959/pexels-photo-6210959.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=2',
-      description: 'Confit de canard traditionnel sous vide',
-      origin: 'France - Sud-Ouest',
-      producer: 'Ferme du Sud-Ouest',
-      stock: 20
+      price: 18.00,
+      unit: 'pot 500g',
+      image: 'https://images.pexels.com/photos/1642669/pexels-photo-1642669.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=2',
+      description: 'Miel de lavande de Provence, récolte artisanale',
+      origin: 'France - Provence',
+      producer: 'Rucher de Provence',
+      stock: 30
     },
     {
       id: 63,
-      name: 'Truffe noire du Périgord',
+      name: 'Huile d\'olive extra vierge',
       category: 'epicerie',
-      price: 800.00,
-      unit: 'kg',
-      image: 'https://images.pexels.com/photos/4518607/pexels-photo-4518607.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=2',
-      description: 'Truffe noire du Périgord, saison 2024',
+      price: 25.00,
+      unit: 'bouteille 500ml',
+      image: 'https://images.pexels.com/photos/1001773/pexels-photo-1001773.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=2',
+      description: 'Huile d\'olive extra vierge première pression',
+      origin: 'France - Provence',
+      producer: 'Moulin de Provence',
+      stock: 25
+    },
+    {
+      id: 64,
+      name: 'Confiture de fraises Mara des bois',
+      category: 'epicerie',
+      price: 8.50,
+      unit: 'pot 250g',
+      image: 'https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=2',
+      description: 'Confiture artisanale de fraises Mara des bois',
       origin: 'France - Périgord',
-      producer: 'Truffières du Périgord',
-      stock: 2
+      producer: 'Confitures du Périgord',
+      stock: 40
     }
   ];
 
