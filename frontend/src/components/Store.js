@@ -16,6 +16,8 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
   const cart = globalCart || {};
   const setCart = setGlobalCart;
 
+  console.log('Cart state:', cart); // Debug log pour voir l'état du panier
+
   const categories = [
     { id: 'all', name: 'Tous', image: 'https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&dpr=2' },
     { id: 'fruits-legumes', name: 'Fruits & Légumes', image: 'https://images.pexels.com/photos/533280/pexels-photo-533280.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&dpr=2' },
