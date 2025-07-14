@@ -16,11 +16,10 @@ import Login from './components/Login';
 import Register from './components/Register';
 import ProducerDashboard from './components/ProducerDashboard';
 import VendorDashboard from './components/VendorDashboard';
-import NotificationBar from './components/NotificationBar';
 
 // Auth context
 import { AuthProvider, useAuth } from './contexts/AuthContext';
-import { NotificationProvider } from './contexts/NotificationContext';
+import { OrderProvider } from './contexts/OrderContext';
 
 // API setup
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
@@ -57,7 +56,6 @@ function AppContent() {
 
   return (
     <div className="App">
-      <NotificationBar />
       <Header 
         cart={globalCart} 
         getTotalItems={getTotalItems} 
@@ -118,11 +116,11 @@ function AppContent() {
 function App() {
   return (
     <AuthProvider>
-      <NotificationProvider>
+      <OrderProvider>
         <Router>
           <AppContent />
         </Router>
-      </NotificationProvider>
+      </OrderProvider>
     </AuthProvider>
   );
 }
