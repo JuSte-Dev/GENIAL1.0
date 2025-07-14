@@ -748,36 +748,6 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
       producer: 'ELY Cocktails',
       stock: 12
     },
-      image: 'https://images.pexels.com/photos/1407846/pexels-photo-1407846.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=2',
-      description: 'Liqueur de poire Williams ELY, artisanale',
-      origin: 'France - Distillerie ELY',
-      producer: 'Distillerie ELY',
-      stock: 15
-    },
-    {
-      id: 57,
-      name: 'ELY Vodka Premium',
-      category: 'cocktails',
-      price: 42.00,
-      unit: 'bouteille 70cl',
-      image: 'https://images.pexels.com/photos/1407846/pexels-photo-1407846.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=2',
-      description: 'Vodka premium ELY, distillation française',
-      origin: 'France - Distillerie ELY',
-      producer: 'Distillerie ELY',
-      stock: 18
-    },
-    {
-      id: 58,
-      name: 'ELY Whisky Single Malt',
-      category: 'cocktails',
-      price: 85.00,
-      unit: 'bouteille 70cl',
-      image: 'https://images.pexels.com/photos/1407846/pexels-photo-1407846.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=2',
-      description: 'Whisky single malt ELY, vieillissement 8 ans',
-      origin: 'France - Distillerie ELY',
-      producer: 'Distillerie ELY',
-      stock: 12
-    },
 
     // Épicerie Fine
     {
