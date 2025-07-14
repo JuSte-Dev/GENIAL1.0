@@ -201,29 +201,27 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Restaurant section with people at table */}
+          {/* Expérience gastronomique section */}
           <div className="mt-8 group relative h-96 rounded-2xl overflow-hidden cursor-pointer">
             <img 
               src="https://images.unsplash.com/photo-1631021967261-c57ee4dfa9bb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHx2ZWdldGFibGUlMjBiYXNrZXR8ZW58MHx8fHwxNzUyNDIxNTY2fDA&ixlib=rb-4.1.0&q=85"
-              alt="Restaurant ambiance"
+              alt="Expérience gastronomique"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
-            <div className="absolute inset-0 flex flex-col justify-center items-center px-6">
-              <div className="text-center text-white max-w-2xl">
-                <div className="flex items-center justify-center mb-4">
-                  <Utensils className="w-10 h-10 text-neon-blue mr-4" />
-                  <span className="text-xl font-semibold text-white bg-black/30 px-4 py-2 rounded-full">19h00 - 22h30</span>
-                </div>
-                <h3 className="text-4xl font-bold mb-4 text-white">Restaurant gastronomique</h3>
-                <p className="text-xl text-gray-200 mb-6">
-                  Terminez votre journée par une expérience culinaire unique dans notre restaurant
-                </p>
-                <div className="flex flex-wrap gap-3 justify-center">
-                  <span className="px-4 py-2 bg-neon-blue/80 rounded-full text-lg border border-neon-blue/50 text-white font-medium">Menu dégustation</span>
-                  <span className="px-4 py-2 bg-neon-blue/80 rounded-full text-lg border border-neon-blue/50 text-white font-medium">Cuisine créative</span>
-                  <span className="px-4 py-2 bg-neon-blue/80 rounded-full text-lg border border-neon-blue/50 text-white font-medium">Accords mets-vins</span>
-                </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+            <div className="absolute bottom-6 left-6 right-6 text-white">
+              <div className="flex items-center mb-3">
+                <Utensils className="w-8 h-8 text-neon-blue mr-3" />
+                <span className="text-lg font-semibold">19h00 - 22h30</span>
+              </div>
+              <h3 className="text-3xl font-bold mb-3 text-white">Expérience gastronomique</h3>
+              <p className="text-lg text-gray-200 mb-4">
+                Participez à nos ateliers culinaires, dégustations et soirées découverte animées par nos chefs
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-neon-blue/20 rounded-full text-sm border border-neon-blue/30">Ateliers cuisine</span>
+                <span className="px-3 py-1 bg-neon-blue/20 rounded-full text-sm border border-neon-blue/30">Dégustations vins</span>
+                <span className="px-3 py-1 bg-neon-blue/20 rounded-full text-sm border border-neon-blue/30">Soirées découverte</span>
               </div>
             </div>
           </div>
