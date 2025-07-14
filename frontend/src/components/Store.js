@@ -1044,9 +1044,9 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {filteredProducts.map((product) => (
             <div key={product.id} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden">
-              <div className="flex h-48 min-h-[192px]">
+              <div className="flex h-52 min-h-[208px]">
                 {/* Product Image - Left side */}
-                <div className="relative w-40 h-48 flex-shrink-0 overflow-hidden">
+                <div className="relative w-40 h-52 flex-shrink-0 overflow-hidden">
                   <img
                     src={product.image}
                     alt={product.name}
@@ -1059,13 +1059,13 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
                   </div>
                 </div>
                 
-                {/* Product Info - Right side - OPTIMIZED LAYOUT */}
+                {/* Product Info - Right side - TALLER LAYOUT */}
                 <div className="flex-1 p-4 flex flex-col min-w-0">
-                  <div className="flex-1 mb-4">
+                  <div className="flex-1 mb-6">
                     <h3 className="text-sm font-bold text-gray-900 mb-1 line-clamp-2">{product.name}</h3>
-                    <p className="text-xs text-gray-600 mb-2 line-clamp-2">{product.description}</p>
+                    <p className="text-xs text-gray-600 mb-3 line-clamp-2">{product.description}</p>
                     
-                    <div className="flex items-center justify-between mb-2">
+                    <div className="flex items-center justify-between mb-3">
                       <div>
                         <div className="text-lg font-bold text-primary">{product.price}€</div>
                         <div className="text-xs text-gray-500">par {product.unit}</div>
@@ -1078,7 +1078,7 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
                       </div>
                     </div>
 
-                    <div className="flex items-center justify-between mb-2">
+                    <div className="flex items-center justify-between mb-4">
                       <span className="text-xs text-gray-500">Stock: {product.stock}</span>
                       <div className="flex items-center">
                         {[...Array(5)].map((_, i) => (
@@ -1088,8 +1088,8 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
                     </div>
                   </div>
                   
-                  {/* Add to cart section - PERFECTLY POSITIONED */}
-                  <div className="flex items-center justify-center w-full mt-auto">
+                  {/* Add to cart section - BOTTOM ALIGNED */}
+                  <div className="flex items-center justify-center w-full">
                     {(cart && cart[product.id] && cart[product.id] > 0) ? (
                       <div className="flex items-center space-x-3">
                         <button
@@ -1103,7 +1103,7 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
                         </span>
                         <button
                           onClick={() => addToCart(product.id)}
-                          className="w-10 h-10 bg-primary hover:bg-gray-800 text-white rounded-full flex items-center justify-center transition-colors"
+                          className="w-10 h-10 bg-neon-blue hover:bg-blue-600 text-white rounded-full flex items-center justify-center transition-colors"
                         >
                           <Plus className="w-5 h-5" />
                         </button>
@@ -1111,7 +1111,7 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
                     ) : (
                       <button
                         onClick={() => addToCart(product.id)}
-                        className="bg-primary hover:bg-gray-800 text-white px-6 py-3 rounded-lg font-medium transition-colors text-sm flex items-center w-full justify-center max-w-[200px]"
+                        className="bg-neon-blue hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition-colors text-sm flex items-center w-full justify-center max-w-[200px]"
                       >
                         <Plus className="w-5 h-5 mr-2" />
                         Ajouter
