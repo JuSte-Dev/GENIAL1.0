@@ -815,7 +815,12 @@ const Store = () => {
     const fetchProducts = async () => {
       try {
         const response = await apiService.getProducts();
-        setProducts(response.data);
+        if (response.data && response.data.length > 0) {
+          setProducts(response.data);
+        } else {
+          // If API returns empty array, use default products
+          setProducts(defaultProducts);
+        }
       } catch (error) {
         console.error('Error fetching products:', error);
         setProducts(defaultProducts);
