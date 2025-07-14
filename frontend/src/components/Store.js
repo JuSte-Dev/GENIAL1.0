@@ -1006,77 +1006,81 @@ const Store = () => {
           </div>
         </div>
 
-        {/* Products Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        {/* Products Grid - 2 products per row with smaller cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {filteredProducts.map((product) => (
-            <div key={product.id} className="card hover:shadow-xl transition-all duration-300">
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute top-4 right-4">
-                  <div className="bg-white/90 backdrop-blur-sm rounded-full px-3 py-1">
-                    <span className="text-sm font-semibold text-gray-900">{product.price}€</span>
+            <div key={product.id} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
+              <div className="flex">
+                {/* Product Image - Left side */}
+                <div className="relative w-1/3 h-40 overflow-hidden">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute top-2 right-2">
+                    <div className="bg-white/90 backdrop-blur-sm rounded-full px-2 py-1">
+                      <span className="text-xs font-semibold text-gray-900">{product.price}€</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              
-              <div className="card-body">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{product.name}</h3>
-                <p className="text-sm text-gray-600 mb-3">{product.description}</p>
                 
-                <div className="flex items-center justify-between mb-4">
-                  <div>
-                    <div className="text-xl font-bold text-primary">{product.price}€</div>
-                    <div className="text-sm text-gray-500">par {product.unit}</div>
+                {/* Product Info - Right side */}
+                <div className="flex-1 p-4">
+                  <h3 className="text-base font-bold text-gray-900 mb-1">{product.name}</h3>
+                  <p className="text-xs text-gray-600 mb-2 line-clamp-2">{product.description}</p>
+                  
+                  <div className="flex items-center justify-between mb-2">
+                    <div>
+                      <div className="text-lg font-bold text-primary">{product.price}€</div>
+                      <div className="text-xs text-gray-500">par {product.unit}</div>
+                    </div>
+                    <div className="text-right">
+                      <div className="text-xs text-gray-500">{product.origin}</div>
+                      {product.producer && (
+                        <div className="text-xs text-gray-400 mt-1 truncate max-w-[120px]">{product.producer}</div>
+                      )}
+                    </div>
                   </div>
-                  <div className="text-right">
-                    <div className="text-xs text-gray-500">{product.origin}</div>
-                    {product.producer && (
-                      <div className="text-xs text-gray-400 mt-1">{product.producer}</div>
-                    )}
-                  </div>
-                </div>
 
-                <div className="flex items-center justify-between mb-3">
-                  <span className="text-sm text-gray-500">Stock: {product.stock}</span>
-                  <div className="flex items-center">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                    ))}
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-xs text-gray-500">Stock: {product.stock}</span>
+                    <div className="flex items-center">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-3 h-3 text-yellow-400 fill-current" />
+                      ))}
+                    </div>
                   </div>
-                </div>
-                
-                <div className="flex items-center justify-between">
-                  {cart[product.id] > 0 ? (
-                    <div className="flex items-center space-x-3">
-                      <button
-                        onClick={() => removeFromCart(product.id)}
-                        className="w-8 h-8 bg-gray-200 hover:bg-gray-300 rounded-full flex items-center justify-center transition-colors"
-                      >
-                        <Minus className="w-4 h-4" />
-                      </button>
-                      <span className="font-semibold text-gray-900 min-w-[2rem] text-center">
-                        {cart[product.id]}
-                      </span>
+                  
+                  <div className="flex items-center justify-between">
+                    {cart[product.id] > 0 ? (
+                      <div className="flex items-center space-x-2">
+                        <button
+                          onClick={() => removeFromCart(product.id)}
+                          className="w-6 h-6 bg-gray-200 hover:bg-gray-300 rounded-full flex items-center justify-center transition-colors"
+                        >
+                          <Minus className="w-3 h-3" />
+                        </button>
+                        <span className="font-semibold text-gray-900 min-w-[1.5rem] text-center text-sm">
+                          {cart[product.id]}
+                        </span>
+                        <button
+                          onClick={() => addToCart(product.id)}
+                          className="w-6 h-6 bg-primary hover:bg-gray-800 text-white rounded-full flex items-center justify-center transition-colors"
+                        >
+                          <Plus className="w-3 h-3" />
+                        </button>
+                      </div>
+                    ) : (
                       <button
                         onClick={() => addToCart(product.id)}
-                        className="w-8 h-8 bg-primary hover:bg-gray-800 text-white rounded-full flex items-center justify-center transition-colors"
+                        className="bg-primary hover:bg-gray-800 text-white px-4 py-2 rounded-lg font-medium transition-colors text-sm"
                       >
-                        <Plus className="w-4 h-4" />
+                        <Plus className="w-3 h-3 mr-1 inline" />
+                        Ajouter
                       </button>
-                    </div>
-                  ) : (
-                    <button
-                      onClick={() => addToCart(product.id)}
-                      className="btn btn-primary w-full"
-                    >
-                      <Plus className="w-4 h-4 mr-2" />
-                      Ajouter
-                    </button>
-                  )}
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
