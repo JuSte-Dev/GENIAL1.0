@@ -44,14 +44,36 @@ const ProtectedRoute = ({ children, requiredRole }) => {
 
 function AppContent() {
   const { user, isAuthenticated } = useAuth();
+  
+  // État global du panier
+  const [globalCart, setGlobalCart] = React.useState({});
+  const [showCart, setShowCart] = React.useState(false);
+  
+  const getTotalItems = () => {
+    return Object.values(globalCart).reduce((sum, quantity) => sum + quantity, 0);
+  };
 
   return (
     <div className="App">
-      <Header />
+      <Header 
+        cart={globalCart} 
+        getTotalItems={getTotalItems} 
+        setShowCart={setShowCart} 
+      />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/store" element={<Store />} />
+          <Route 
+            path="/store" 
+            element={
+              <Store 
+                globalCart={globalCart} 
+                setGlobalCart={setGlobalCart}
+                showCart={showCart}
+                setShowCart={setShowCart}
+              />
+            } 
+          />
           <Route path="/reservations" element={<Reservations />} />
           <Route path="/producers" element={<Producers />} />
           <Route path="/careers" element={<Careers />} />
