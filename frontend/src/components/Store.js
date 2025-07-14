@@ -904,18 +904,44 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
 
       setOrderNumber(order.order_number);
       setPreparationTime(order.preparation_time);
+      
+      // Ajouter la notification persistante
+      addOrderNotification({
+        orderNumber: order.order_number,
+        preparationTime: order.preparation_time
+      });
+      
       setCart({});
       setShowPayment(false);
       setShowConfirmation(true);
+      
+      // Fermer la confirmation après 3 secondes
+      setTimeout(() => {
+        setShowConfirmation(false);
+      }, 3000);
     } catch (error) {
       console.error('Error creating order:', error);
       // Fallback for demo
       const orderNum = 'CMD' + Math.random().toString(36).substr(2, 6).toUpperCase();
+      const prepTime = 15 + getTotalItems() * 2;
+      
       setOrderNumber(orderNum);
-      setPreparationTime(15 + getTotalItems() * 2);
+      setPreparationTime(prepTime);
+      
+      // Ajouter la notification persistante
+      addOrderNotification({
+        orderNumber: orderNum,
+        preparationTime: prepTime
+      });
+      
       setCart({});
       setShowPayment(false);
       setShowConfirmation(true);
+      
+      // Fermer la confirmation après 3 secondes
+      setTimeout(() => {
+        setShowConfirmation(false);
+      }, 3000);
     }
   };
 
