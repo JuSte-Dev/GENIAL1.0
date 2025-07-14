@@ -945,32 +945,6 @@ const Store = () => {
           </div>
         </div>
 
-        {/* Cart Summary */}
-        {getTotalItems() > 0 && (
-          <div className="mb-8 bg-white rounded-xl shadow-lg p-6">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-4">
-                <ShoppingCart className="w-6 h-6 text-primary" />
-                <div>
-                  <p className="font-semibold">Votre panier</p>
-                  <p className="text-sm text-gray-600">{getTotalItems()} article{getTotalItems() > 1 ? 's' : ''}</p>
-                </div>
-              </div>
-              <div className="flex items-center space-x-4">
-                <div className="text-right">
-                  <p className="font-bold text-xl text-primary">{getTotalPrice().toFixed(2)}€</p>
-                </div>
-                <button
-                  onClick={() => setShowCart(true)}
-                  className="btn btn-primary"
-                >
-                  Voir le panier
-                </button>
-              </div>
-            </div>
-          </div>
-        )}
-
         {/* Filters */}
         <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
           <div className="flex flex-col lg:flex-row gap-4">
