@@ -16,6 +16,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import ProducerDashboard from './components/ProducerDashboard';
 import VendorDashboard from './components/VendorDashboard';
+import NotificationBar from './components/NotificationBar';
 
 // Auth context
 import { AuthProvider, useAuth } from './contexts/AuthContext';
