@@ -215,7 +215,7 @@ const Home = () => {
                   <Utensils className="w-10 h-10 text-neon-blue mr-4" />
                   <span className="text-xl font-semibold">19h00 - 22h30</span>
                 </div>
-                <h3 className="text-4xl font-bold mb-4">Restaurant gastronomique</h3>
+                <h3 className="text-4xl font-bold mb-4 text-white">Restaurant gastronomique</h3>
                 <p className="text-xl text-gray-200 mb-6">
                   Terminez votre journée par une expérience culinaire unique dans notre restaurant
                 </p>
