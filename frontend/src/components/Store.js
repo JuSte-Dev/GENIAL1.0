@@ -26,8 +26,8 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
     { id: 'vins-rouges', name: 'Vins Rouges', image: 'https://images.unsplash.com/photo-1586800687177-069ba4e4f5c4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwxfHx3aW5lfGVufDB8fHx3aGl0ZXwxNzUyNDE2NDA0fDA&ixlib=rb-4.1.0&q=85&w=50&h=50' },
     { id: 'vins-blancs', name: 'Vins Blancs', image: 'https://images.unsplash.com/photo-1611571940159-425a28706d6f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwzfHx3aW5lfGVufDB8fHx3aGl0ZXwxNzUyNDE2NDA0fDA&ixlib=rb-4.1.0&q=85&w=50&h=50' },
     { id: 'champagnes', name: 'Champagnes', image: 'https://images.unsplash.com/photo-1708265502359-1f6f3ad8227b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwzfHxjaGFtcGFnbmV8ZW58MHx8fHdoaXRlfDE3NTI0MTY0MTB8MA&ixlib=rb-4.1.0&q=85&w=50&h=50' },
-    { id: 'cafe', name: 'Café Partisan', image: 'https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&dpr=2' },
-    { id: 'cocktails', name: 'ELY Cocktails', image: 'https://images.pexels.com/photos/1407846/pexels-photo-1407846.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&dpr=2' },
+    { id: 'cafe', name: 'Café Partisan', image: 'https://www.parispartisancafe.com/cdn/shop/files/Screenshot2025-05-29at09.20.42_300x300.png?v=1748503259' },
+    { id: 'cocktails', name: 'ELY Cocktails', image: 'https://www.ely.bar/cdn/shop/products/NEGRONI50_300x.jpg?v=1686212324' },
     { id: 'epicerie', name: 'Épicerie Fine', image: 'https://images.pexels.com/photos/4198019/pexels-photo-4198019.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&dpr=2' }
   ];
 
