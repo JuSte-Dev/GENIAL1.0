@@ -182,7 +182,7 @@ const Login = () => {
             <button
               type="submit"
               disabled={loading}
-              className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-neon-blue hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neon-blue disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {loading ? (
                 <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
@@ -193,6 +193,17 @@ const Login = () => {
                 </>
               )}
             </button>
+          </div>
+
+          {/* Bouton Créer un compte bien visible */}
+          <div>
+            <Link
+              to="/register"
+              className="w-full flex justify-center py-3 px-4 border border-neon-blue text-neon-blue rounded-md shadow-sm text-sm font-medium hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neon-blue transition-colors"
+            >
+              <User className="w-5 h-5 mr-2" />
+              Créer un compte
+            </Link>
           </div>
 
           {/* Test Quick Login Buttons */}
