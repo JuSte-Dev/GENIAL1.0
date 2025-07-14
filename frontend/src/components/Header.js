@@ -247,7 +247,7 @@ const Header = ({ cart = {}, getTotalItems = () => 0, setShowCart = () => {} }) 
                 );
               })}
               
-              {/* Connexion/Inscription pour mobile si pas connecté */}
+              {/* Connexion pour mobile si pas connecté */}
               {!isAuthenticated && (
                 <div className="border-t border-gray-200 pt-4 mt-4 space-y-1">
                   <Link
@@ -256,15 +256,7 @@ const Header = ({ cart = {}, getTotalItems = () => 0, setShowCart = () => {} }) 
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <User className="w-5 h-5" />
-                    <span>Connexion</span>
-                  </Link>
-                  <Link
-                    to="/register"
-                    className="flex items-center space-x-2 px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-neon-blue hover:bg-blue-50"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    <User className="w-5 h-5" />
-                    <span>Inscription</span>
+                    <span>Se connecter</span>
                   </Link>
                 </div>
               )}
