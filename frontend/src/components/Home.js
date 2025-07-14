@@ -138,7 +138,7 @@ const Home = () => {
                   <Sandwich className="w-8 h-8 text-neon-blue mr-3" />
                   <span className="text-lg font-semibold">11h30 - 15h00</span>
                 </div>
-                <h3 className="text-3xl font-bold mb-3">Lunch gourmand</h3>
+                <h3 className="text-3xl font-bold mb-3 text-white">Lunch gourmand</h3>
                 <p className="text-lg text-gray-200 mb-4">
                   Savourez nos sandwichs artisanaux, salades fraîches et plats du jour
                 </p>
