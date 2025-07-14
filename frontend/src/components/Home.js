@@ -113,7 +113,7 @@ const Home = () => {
                   <Coffee className="w-8 h-8 text-neon-blue mr-3" />
                   <span className="text-lg font-semibold">7h00 - 10h30</span>
                 </div>
-                <h3 className="text-3xl font-bold mb-3">Café matinal</h3>
+                <h3 className="text-3xl font-bold mb-3 text-white">{slot.title}</h3>
                 <p className="text-lg text-gray-200 mb-4">
                   Commencez votre journée avec nos cafés d'exception et viennoiseries artisanales
                 </p>
