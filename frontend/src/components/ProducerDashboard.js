@@ -40,19 +40,78 @@ const ProducerDashboard = () => {
 
   const fetchDashboardData = async () => {
     try {
-      const response = await apiService.getProducerDashboard();
-      setDashboardData(response.data);
-      setProducts(response.data.products || []);
+      const token = localStorage.getItem('token');
+      
+      // Si c'est un token de test, utiliser des données fictives
+      if (token && token.startsWith('test-token-')) {
+        // Données de test pour le dashboard producteur
+        const testDashboardData = {
+          total_products: 12,
+          total_sales: 1520.75,
+          pending_orders: 8,
+          monthly_revenue: 4862.30,
+          products: [
+            {
+              id: 1,
+              name: 'Tomates cerises bio',
+              category: 'fruits-legumes',
+              price: 8.50,
+              unit: 'kg',
+              stock: 50,
+              image_url: 'https://images.unsplash.com/photo-1579113800032-c38bd7635818',
+              origin: 'France - Provence',
+              producer_name: 'Producteur Test',
+              description: 'Tomates cerises biologiques de Provence',
+              sales_count: 25
+            },
+            {
+              id: 2,
+              name: 'Fromage de chèvre',
+              category: 'fromages',
+              price: 28.00,
+              unit: 'kg',
+              stock: 12,
+              image_url: 'https://images.unsplash.com/photo-1589881133595-a3c085cb731d',
+              origin: 'France - Loire',
+              producer_name: 'Producteur Test',
+              description: 'Fromage de chèvre cendré artisanal',
+              sales_count: 18
+            },
+            {
+              id: 3,
+              name: 'Miel de lavande',
+              category: 'epicerie',
+              price: 15.50,
+              unit: 'pot 250g',
+              stock: 24,
+              image_url: 'https://images.pexels.com/photos/302480/pexels-photo-302480.jpeg',
+              origin: 'France - Provence',
+              producer_name: 'Producteur Test',
+              description: 'Miel de lavande pur, récolte locale',
+              sales_count: 32
+            }
+          ]
+        };
+        
+        setDashboardData(testDashboardData);
+        setProducts(testDashboardData.products);
+      } else {
+        // Appel API normal pour les vrais utilisateurs
+        const response = await apiService.getProducerDashboard();
+        setDashboardData(response.data);
+        setProducts(response.data.products || []);
+      }
     } catch (error) {
       console.error('Error fetching dashboard data:', error);
-      // Fallback data
+      // Fallback data en cas d'erreur
       setDashboardData({
         total_products: 0,
         total_sales: 0,
-        total_orders: 0,
-        products: [],
-        recent_orders: []
+        pending_orders: 0,
+        monthly_revenue: 0,
+        products: []
       });
+      setProducts([]);
     } finally {
       setLoading(false);
     }
