@@ -949,42 +949,47 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
           </div>
         </div>
 
-        {/* Filters */}
-        <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
-          <div className="flex flex-col lg:flex-row gap-4">
-            <div className="flex-1">
-              <div className="relative">
-                <Search className="w-5 h-5 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
-                <input
-                  type="text"
-                  placeholder="Rechercher un produit..."
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  className="form-control pl-10"
-                />
-              </div>
-            </div>
-            
-            <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+        {/* Categories - Horizontal scrollable line like Deliveroo */}
+        <div className="mb-8">
+          <div className="overflow-x-auto pb-4">
+            <div className="flex space-x-4 min-w-max px-4 md:px-0">
               {categories.map((category) => (
                 <button
                   key={category.id}
                   onClick={() => setSelectedCategory(category.id)}
-                  className={`px-3 py-2 rounded-lg font-medium transition-all flex items-center space-x-2 text-sm ${
+                  className={`flex-shrink-0 flex flex-col items-center space-y-2 p-3 rounded-xl transition-all min-w-[80px] ${
                     selectedCategory === category.id
-                      ? 'bg-primary text-white'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                      ? 'bg-primary text-white shadow-lg'
+                      : 'bg-white text-gray-700 hover:bg-gray-50 shadow-md'
                   }`}
                 >
-                  <img 
-                    src={category.image} 
-                    alt={category.name}
-                    className="w-5 h-5 rounded object-cover"
-                  />
-                  <span className="whitespace-nowrap">{category.name}</span>
+                  <div className={`w-12 h-12 rounded-full overflow-hidden ${
+                    selectedCategory === category.id ? 'ring-2 ring-white' : ''
+                  }`}>
+                    <img 
+                      src={category.image} 
+                      alt={category.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <span className="text-xs font-medium text-center leading-tight">{category.name}</span>
                 </button>
               ))}
             </div>
+          </div>
+        </div>
+
+        {/* Search Bar */}
+        <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
+          <div className="relative">
+            <Search className="w-5 h-5 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+            <input
+              type="text"
+              placeholder="Rechercher un produit..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="form-control pl-10 w-full"
+            />
           </div>
         </div>
 
