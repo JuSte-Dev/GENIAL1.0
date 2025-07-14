@@ -765,7 +765,7 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
 
     // Épicerie Fine
     {
-      id: 59,
+      id: 60,
       name: 'Foie gras de canard mi-cuit',
       category: 'epicerie',
       price: 85.00,
