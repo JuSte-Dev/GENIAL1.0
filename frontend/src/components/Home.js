@@ -208,21 +208,21 @@ const Home = () => {
               alt="Restaurant ambiance"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent"></div>
-            <div className="absolute inset-0 flex items-center">
-              <div className="max-w-2xl mx-auto text-center px-6 text-white">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
+            <div className="absolute inset-0 flex flex-col justify-center items-center px-6">
+              <div className="text-center text-white max-w-2xl">
                 <div className="flex items-center justify-center mb-4">
                   <Utensils className="w-10 h-10 text-neon-blue mr-4" />
-                  <span className="text-xl font-semibold">19h00 - 22h30</span>
+                  <span className="text-xl font-semibold text-white bg-black/30 px-4 py-2 rounded-full">19h00 - 22h30</span>
                 </div>
                 <h3 className="text-4xl font-bold mb-4 text-white">Restaurant gastronomique</h3>
                 <p className="text-xl text-gray-200 mb-6">
                   Terminez votre journée par une expérience culinaire unique dans notre restaurant
                 </p>
                 <div className="flex flex-wrap gap-3 justify-center">
-                  <span className="px-4 py-2 bg-neon-blue/20 rounded-full text-lg border border-neon-blue/30">Menu dégustation</span>
-                  <span className="px-4 py-2 bg-neon-blue/20 rounded-full text-lg border border-neon-blue/30">Cuisine créative</span>
-                  <span className="px-4 py-2 bg-neon-blue/20 rounded-full text-lg border border-neon-blue/30">Accords mets-vins</span>
+                  <span className="px-4 py-2 bg-neon-blue/80 rounded-full text-lg border border-neon-blue/50 text-white font-medium">Menu dégustation</span>
+                  <span className="px-4 py-2 bg-neon-blue/80 rounded-full text-lg border border-neon-blue/50 text-white font-medium">Cuisine créative</span>
+                  <span className="px-4 py-2 bg-neon-blue/80 rounded-full text-lg border border-neon-blue/50 text-white font-medium">Accords mets-vins</span>
                 </div>
               </div>
             </div>
