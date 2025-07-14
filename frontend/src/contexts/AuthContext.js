@@ -41,10 +41,49 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (email, password) => {
     try {
+      // Vérifier si c'est une connexion de test
+      if (email === 'client@test.com' && password === 'password123') {
+        const testUser = {
+          id: '1',
+          name: 'Client Test',
+          email: 'client@test.com',
+          role: 'client'
+        };
+        
+        localStorage.setItem('token', 'test-token-client');
+        localStorage.setItem('user', JSON.stringify(testUser));
+        axios.defaults.headers.common['Authorization'] = `Bearer test-token-client`;
+        
+        setUser(testUser);
+        setIsAuthenticated(true);
+        
+        return { success: true };
+      }
+      
+      if (email === 'producer@test.com' && password === 'password123') {
+        const testUser = {
+          id: '2',
+          name: 'Producteur Test',
+          email: 'producer@test.com',
+          role: 'producer'
+        };
+        
+        localStorage.setItem('token', 'test-token-producer');
+        localStorage.setItem('user', JSON.stringify(testUser));
+        axios.defaults.headers.common['Authorization'] = `Bearer test-token-producer`;
+        
+        setUser(testUser);
+        setIsAuthenticated(true);
+        
+        return { success: true };
+      }
+      
+      // Connexion normale avec API
       const response = await axios.post('/auth/login', { email, password });
       const { access_token, user: userData } = response.data;
       
       localStorage.setItem('token', access_token);
+      localStorage.setItem('user', JSON.stringify(userData));
       axios.defaults.headers.common['Authorization'] = `Bearer ${access_token}`;
       
       setUser(userData);
