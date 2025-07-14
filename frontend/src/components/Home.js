@@ -1,17 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
-  Clock, 
   ShoppingCart, 
-  Calendar,
-  Coffee,
-  Utensils,
-  Wine,
+  Calendar, 
+  Coffee, 
+  Wine, 
+  Utensils, 
+  Star, 
+  ShoppingBasket,
+  Sandwich,
   ArrowRight,
-  Star,
   MapPin,
   Phone,
-  Mail
+  Mail,
+  Clock
 } from 'lucide-react';
 
 const Home = () => {
