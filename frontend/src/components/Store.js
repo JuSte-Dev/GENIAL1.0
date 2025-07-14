@@ -15,18 +15,18 @@ const Store = () => {
   const [loading, setLoading] = useState(true);
 
   const categories = [
-    { id: 'all', name: 'Tous', emoji: '🛒' },
-    { id: 'fruits-legumes', name: 'Fruits & Légumes', emoji: '🥬' },
-    { id: 'charcuterie', name: 'Charcuterie', emoji: '🥓' },
-    { id: 'viandes', name: 'Viandes', emoji: '🥩' },
-    { id: 'poissons', name: 'Poissons', emoji: '🐟' },
-    { id: 'fromages', name: 'Fromages', emoji: '🧀' },
-    { id: 'vins-rouges', name: 'Vins Rouges', emoji: '🍷' },
-    { id: 'vins-blancs', name: 'Vins Blancs', emoji: '🥂' },
-    { id: 'champagnes', name: 'Champagnes', emoji: '🍾' },
-    { id: 'cafe', name: 'Café Partisan', emoji: '☕' },
-    { id: 'cocktails', name: 'ELY Cocktails', emoji: '🍸' },
-    { id: 'epicerie', name: 'Épicerie Fine', emoji: '🥫' }
+    { id: 'all', name: 'Tous', image: 'https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&dpr=2' },
+    { id: 'fruits-legumes', name: 'Fruits & Légumes', image: 'https://images.pexels.com/photos/533280/pexels-photo-533280.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&dpr=2' },
+    { id: 'charcuterie', name: 'Charcuterie', image: 'https://images.unsplash.com/photo-1513615147033-3ed2afaaae8f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxoYW18ZW58MHx8fHdoaXRlfDE3NTI0MTYzNDR8MA&ixlib=rb-4.1.0&q=85&w=50&h=50' },
+    { id: 'viandes', name: 'Viandes', image: 'https://images.unsplash.com/photo-1590457075683-06eb6c958aa5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMGZpc2h8ZW58MHx8fHdoaXRlfDE3NTI0MjE3NzJ8MA&ixlib=rb-4.1.0&q=85&w=50&h=50' },
+    { id: 'poissons', name: 'Poissons', image: 'https://images.pexels.com/photos/4725596/pexels-photo-4725596.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&dpr=2' },
+    { id: 'fromages', name: 'Fromages', image: 'https://images.pexels.com/photos/773253/pexels-photo-773253.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&dpr=2' },
+    { id: 'vins-rouges', name: 'Vins Rouges', image: 'https://images.unsplash.com/photo-1586800687177-069ba4e4f5c4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwxfHx3aW5lfGVufDB8fHx3aGl0ZXwxNzUyNDE2NDA0fDA&ixlib=rb-4.1.0&q=85&w=50&h=50' },
+    { id: 'vins-blancs', name: 'Vins Blancs', image: 'https://images.unsplash.com/photo-1611571940159-425a28706d6f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwzfHx3aW5lfGVufDB8fHx3aGl0ZXwxNzUyNDE2NDA0fDA&ixlib=rb-4.1.0&q=85&w=50&h=50' },
+    { id: 'champagnes', name: 'Champagnes', image: 'https://images.unsplash.com/photo-1708265502359-1f6f3ad8227b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwzfHxjaGFtcGFnbmV8ZW58MHx8fHdoaXRlfDE3NTI0MTY0MTB8MA&ixlib=rb-4.1.0&q=85&w=50&h=50' },
+    { id: 'cafe', name: 'Café Partisan', image: 'https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&dpr=2' },
+    { id: 'cocktails', name: 'ELY Cocktails', image: 'https://images.pexels.com/photos/1407846/pexels-photo-1407846.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&dpr=2' },
+    { id: 'epicerie', name: 'Épicerie Fine', image: 'https://images.pexels.com/photos/4198019/pexels-photo-4198019.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&dpr=2' }
   ];
 
   // Products with improved images - keeping all original products
