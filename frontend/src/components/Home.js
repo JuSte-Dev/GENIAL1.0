@@ -204,7 +204,7 @@ const Home = () => {
           {/* Expérience gastronomique section */}
           <div className="mt-8 group relative h-96 rounded-2xl overflow-hidden cursor-pointer">
             <img 
-              src="https://images.unsplash.com/photo-1631021967261-c57ee4dfa9bb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHx2ZWdldGFibGUlMjBiYXNrZXR8ZW58MHx8fHwxNzUyNDIxNTY2fDA&ixlib=rb-4.1.0&q=85"
+              src="https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwyfHxjb29raW5nJTIwd29ya3Nob3B8ZW58MHx8fHwxNzUyNTE3MDkzfDA&ixlib=rb-4.1.0&q=85"
               alt="Expérience gastronomique"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             />
