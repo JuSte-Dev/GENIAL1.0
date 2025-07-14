@@ -188,7 +188,7 @@ const Home = () => {
                   <Wine className="w-8 h-8 text-neon-blue mr-3" />
                   <span className="text-lg font-semibold">17h00 - 20h00</span>
                 </div>
-                <h3 className="text-3xl font-bold mb-3">Apéro dînatoire</h3>
+                <h3 className="text-3xl font-bold mb-3 text-white">Apéro dînatoire</h3>
                 <p className="text-lg text-gray-200 mb-4">
                   Partagez un moment convivial avec notre sélection de vins et mets raffinés
                 </p>
