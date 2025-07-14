@@ -905,10 +905,12 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
       setOrderNumber(order.order_number);
       setPreparationTime(order.preparation_time);
       
-      // Ajouter la notification persistante
-      addOrderNotification({
+      // Ajouter la commande au contexte
+      addOrder({
         orderNumber: order.order_number,
-        preparationTime: order.preparation_time
+        preparationTime: order.preparation_time,
+        totalAmount: getTotalPrice(),
+        items: orderData.items
       });
       
       setCart({});
@@ -928,10 +930,15 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
       setOrderNumber(orderNum);
       setPreparationTime(prepTime);
       
-      // Ajouter la notification persistante
-      addOrderNotification({
+      // Ajouter la commande au contexte
+      addOrder({
         orderNumber: orderNum,
-        preparationTime: prepTime
+        preparationTime: prepTime,
+        totalAmount: getTotalPrice(),
+        items: Object.entries(cart).filter(([_, quantity]) => quantity > 0).map(([productId, quantity]) => {
+          const product = products.find(p => p.id === parseInt(productId));
+          return { product_id: productId, quantity, price: product?.price || 0, name: product?.name || 'Produit' };
+        })
       });
       
       setCart({});
