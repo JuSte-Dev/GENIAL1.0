@@ -777,7 +777,7 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
       stock: 12
     },
     {
-      id: 60,
+      id: 61,
       name: 'Terrine de sanglier aux noisettes',
       category: 'epicerie',
       price: 22.00,
