@@ -998,7 +998,11 @@ const Store = () => {
                       : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
                 >
-                  <span className="text-base">{category.emoji}</span>
+                  <img 
+                    src={category.image} 
+                    alt={category.name}
+                    className="w-5 h-5 rounded object-cover"
+                  />
                   <span className="whitespace-nowrap">{category.name}</span>
                 </button>
               ))}
