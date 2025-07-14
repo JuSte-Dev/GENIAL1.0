@@ -169,15 +169,13 @@ const Login = () => {
             </div>
           )}
 
-          <div className="flex items-center justify-between">
-            <div className="text-sm">
-              <Link
-                to="/forgot-password"
-                className="font-medium text-primary hover:text-gray-800"
-              >
-                Mot de passe oublié ?
-              </Link>
-            </div>
+          <div className="text-sm text-center">
+            <Link
+              to="/register"
+              className="font-medium text-neon-blue hover:text-blue-600 transition-colors"
+            >
+              Pas encore de compte ? Rejoindre GENIAL
+            </Link>
           </div>
 
           <div>
