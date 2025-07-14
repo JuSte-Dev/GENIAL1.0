@@ -13,6 +13,32 @@ const Login = () => {
   const { login } = useAuth();
   const navigate = useNavigate();
 
+  const handleQuickLogin = async (userType) => {
+    setLoading(true);
+    setError('');
+    
+    try {
+      // Connexion rapide selon le type d'utilisateur
+      const testCredentials = {
+        client: { email: 'client@test.com', password: 'password123' },
+        producer: { email: 'producer@test.com', password: 'password123' }
+      };
+      
+      const { email: testEmail, password: testPassword } = testCredentials[userType];
+      const result = await login(testEmail, testPassword);
+      
+      if (result.success) {
+        navigate('/');
+      } else {
+        setError(result.error);
+      }
+    } catch (err) {
+      setError('Erreur de connexion rapide');
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
