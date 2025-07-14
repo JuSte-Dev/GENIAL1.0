@@ -1009,9 +1009,9 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {filteredProducts.map((product) => (
             <div key={product.id} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden">
-              <div className="flex h-40 min-h-[160px]">
+              <div className="flex h-44 min-h-[176px]">
                 {/* Product Image - Left side */}
-                <div className="relative w-40 h-40 flex-shrink-0 overflow-hidden">
+                <div className="relative w-40 h-44 flex-shrink-0 overflow-hidden">
                   <img
                     src={product.image}
                     alt={product.name}
@@ -1024,7 +1024,7 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
                   </div>
                 </div>
                 
-                {/* Product Info - Right side - FIXED WIDTH */}
+                {/* Product Info - Right side - IMPROVED LAYOUT */}
                 <div className="flex-1 p-4 flex flex-col justify-between min-w-0">
                   <div className="flex-1">
                     <h3 className="text-sm font-bold text-gray-900 mb-1 line-clamp-2">{product.name}</h3>
@@ -1043,7 +1043,7 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
                       </div>
                     </div>
 
-                    <div className="flex items-center justify-between mb-2">
+                    <div className="flex items-center justify-between mb-3">
                       <span className="text-xs text-gray-500">Stock: {product.stock}</span>
                       <div className="flex items-center">
                         {[...Array(5)].map((_, i) => (
@@ -1053,22 +1053,22 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
                     </div>
                   </div>
                   
-                  {/* Add to cart section - BETTER POSITIONING */}
-                  <div className="flex items-center justify-center w-full">
+                  {/* Add to cart section - FIXED POSITIONING */}
+                  <div className="flex items-center justify-center w-full mt-2">
                     {(cart && cart[product.id] && cart[product.id] > 0) ? (
-                      <div className="flex items-center space-x-2">
+                      <div className="flex items-center space-x-3">
                         <button
                           onClick={() => removeFromCart(product.id)}
-                          className="w-8 h-8 bg-gray-200 hover:bg-gray-300 rounded-full flex items-center justify-center transition-colors"
+                          className="w-9 h-9 bg-gray-200 hover:bg-gray-300 rounded-full flex items-center justify-center transition-colors"
                         >
                           <Minus className="w-4 h-4" />
                         </button>
-                        <span className="font-semibold text-gray-900 min-w-[2rem] text-center">
+                        <span className="font-semibold text-gray-900 min-w-[2rem] text-center text-lg">
                           {cart[product.id]}
                         </span>
                         <button
                           onClick={() => addToCart(product.id)}
-                          className="w-8 h-8 bg-primary hover:bg-gray-800 text-white rounded-full flex items-center justify-center transition-colors"
+                          className="w-9 h-9 bg-primary hover:bg-gray-800 text-white rounded-full flex items-center justify-center transition-colors"
                         >
                           <Plus className="w-4 h-4" />
                         </button>
@@ -1076,7 +1076,7 @@ const Store = ({ globalCart, setGlobalCart, showCart, setShowCart }) => {
                     ) : (
                       <button
                         onClick={() => addToCart(product.id)}
-                        className="bg-primary hover:bg-gray-800 text-white px-4 py-2 rounded-lg font-medium transition-colors text-sm flex items-center w-full justify-center"
+                        className="bg-primary hover:bg-gray-800 text-white px-4 py-2.5 rounded-lg font-medium transition-colors text-sm flex items-center w-full justify-center"
                       >
                         <Plus className="w-4 h-4 mr-1" />
                         Ajouter
