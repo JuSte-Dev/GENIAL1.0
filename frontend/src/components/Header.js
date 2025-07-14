@@ -211,13 +211,6 @@ const Header = ({ cart = {}, getTotalItems = () => 0, setShowCart = () => {} }) 
                 >
                   <User className="w-5 h-5" />
                 </Link>
-                <Link
-                  to="/register"
-                  className="flex items-center justify-center w-10 h-10 text-gray-600 hover:text-neon-blue hover:bg-blue-50 rounded-md border border-gray-300 hover:border-neon-blue transition-colors"
-                  title="Inscription"
-                >
-                  <User className="w-5 h-5" />
-                </Link>
               </div>
             )}
 
