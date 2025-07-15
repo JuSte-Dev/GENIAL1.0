@@ -703,8 +703,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Informations générales */}
-      <section className="py-20 relative">
+      {/* Informations */}
+      <section className="py-16 relative">
         {/* Image de fond avec panier de légumes */}
         <div className="absolute inset-0">
           <img 
@@ -716,30 +716,30 @@ const Home = () => {
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-white">Commandes en ligne</h2>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4 text-white">Informations</h2>
             <p className="text-xl text-white">
               Toutes les informations utiles pour nous contacter
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white/90 backdrop-blur-sm rounded-lg p-8 shadow-lg">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-white/90 backdrop-blur-sm rounded-lg p-6 shadow-lg">
+              <div className="grid grid-cols-3 gap-6">
                 <div className="text-center">
-                  <Mail className="w-12 h-12 text-primary mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold mb-2">Email général</h3>
-                  <p className="text-gray-600">contact@genial.fr</p>
+                  <Mail className="w-10 h-10 text-primary mx-auto mb-3" />
+                  <h3 className="text-lg font-semibold mb-1">Email général</h3>
+                  <p className="text-gray-600 text-sm">contact@genial.fr</p>
                 </div>
                 <div className="text-center">
-                  <Phone className="w-12 h-12 text-primary mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold mb-2">Service client</h3>
-                  <p className="text-gray-600">01 42 33 44 00</p>
+                  <Phone className="w-10 h-10 text-primary mx-auto mb-3" />
+                  <h3 className="text-lg font-semibold mb-1">Service client</h3>
+                  <p className="text-gray-600 text-sm">01 42 33 44 00</p>
                 </div>
                 <div className="text-center">
-                  <Clock className="w-12 h-12 text-primary mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold mb-2">Horaires</h3>
-                  <p className="text-gray-600">7h00 - 22h30<br />Tous les jours</p>
+                  <Clock className="w-10 h-10 text-primary mx-auto mb-3" />
+                  <h3 className="text-lg font-semibold mb-1">Horaires</h3>
+                  <p className="text-gray-600 text-sm">7h00 - 22h30<br />Tous les jours</p>
                 </div>
               </div>
             </div>
