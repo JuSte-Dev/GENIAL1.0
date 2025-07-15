@@ -125,7 +125,35 @@ const Home = () => {
             </div>
           </div>
 
-          {/* 2. Lunch gourmand - 12h00-15h00 */}
+          {/* 2. Marché d'exception - 8h00-22h00 */}
+          <div className="relative h-screen group cursor-pointer overflow-hidden" style={{border: 'none', margin: '0px', padding: '0px'}}>
+            <img 
+              src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
+              alt="Marché d'exception - Fruits et légumes"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
+            <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12">
+              <div className="text-white max-w-md">
+                <span className="inline-block bg-neon-blue text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  8h00 - 22h00
+                </span>
+                <h3 className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-white">
+                  Marché d'exception
+                </h3>
+                <p className="text-lg md:text-xl mb-6 text-white leading-relaxed">
+                  Découvrez nos fruits et légumes d'exception, sélectionnés chez les meilleurs producteurs
+                </p>
+                <div className="flex items-center space-x-4">
+                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full text-white">Fruits</span>
+                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full text-white">Légumes</span>
+                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full text-white">Bio</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 3. Lunch gourmand - 12h00-15h00 */}
           <div className="relative h-screen group cursor-pointer overflow-hidden" style={{border: 'none', margin: '0px', padding: '0px'}}>
             <img 
               src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
@@ -153,38 +181,10 @@ const Home = () => {
             </div>
           </div>
 
-          {/* 3. Marché d'exception - 15h00-18h30 */}
-          <div className="relative h-screen group cursor-pointer overflow-hidden" style={{border: 'none', margin: '0px', padding: '0px'}}>
-            <img 
-              src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
-              alt="Marché d'exception - Fruits et légumes"
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
-            <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12">
-              <div className="text-white max-w-md">
-                <span className="inline-block bg-neon-blue text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                  15h00 - 18h30
-                </span>
-                <h3 className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-white">
-                  Marché d'exception
-                </h3>
-                <p className="text-lg md:text-xl mb-6 text-white leading-relaxed">
-                  Découvrez nos fruits et légumes d'exception, sélectionnés chez les meilleurs producteurs
-                </p>
-                <div className="flex items-center space-x-4">
-                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full text-white">Fruits</span>
-                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full text-white">Légumes</span>
-                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full text-white">Bio</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
           {/* 4. Barché d'exception - 18h30-22h00 */}
           <div className="relative h-screen group cursor-pointer overflow-hidden" style={{border: 'none', margin: '0px', padding: '0px'}}>
             <img 
-              src="https://images.unsplash.com/photo-1510427692488-993819e1dc97?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
+              src="https://images.unsplash.com/photo-1474722883778-792e7990302f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
               alt="Barché d'exception - Bouteilles de vin"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
@@ -212,7 +212,7 @@ const Home = () => {
           {/* 5. Expérience gastronomique - 18h30-22h00 */}
           <div className="relative h-screen group cursor-pointer overflow-hidden" style={{border: 'none', margin: '0px', padding: '0px'}}>
             <img 
-              src="https://images.unsplash.com/photo-1498579687545-dcb0c1871e97?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
+              src="https://images.unsplash.com/photo-1556909709-f3fb29b3892c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
               alt="Expérience gastronomique - Mains préparant sur table bois"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
