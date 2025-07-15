@@ -391,18 +391,15 @@ const Home = () => {
             <h3 className="text-2xl font-bold text-primary mb-4 text-center">Trouvez-nous dans Paris</h3>
             <div className="relative h-96 bg-gray-100 rounded-lg overflow-hidden">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10499.123456789!2d2.3522219!3d48.8566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sParis%2C%20France!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=2.2945%2C48.8356%2C2.4095%2C48.8866&layer=mapnik&marker=48.8611%2C2.352"
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
                 className="rounded-lg"
               />
               
               {/* Points interactifs par-dessus la carte */}
-              <div className="absolute top-20 left-36 group">
+              <div className="absolute top-32 left-1/3 group">
                 <div className="w-4 h-4 bg-neon-blue rounded-full border-2 border-white cursor-pointer transform hover:scale-110 transition-transform"></div>
                 <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
                   <div className="bg-black text-white px-3 py-1 rounded text-sm whitespace-nowrap">
@@ -411,7 +408,7 @@ const Home = () => {
                 </div>
               </div>
               
-              <div className="absolute top-32 left-56 group">
+              <div className="absolute top-40 left-1/2 group">
                 <div className="w-4 h-4 bg-neon-blue rounded-full border-2 border-white cursor-pointer transform hover:scale-110 transition-transform"></div>
                 <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
                   <div className="bg-black text-white px-3 py-1 rounded text-sm whitespace-nowrap">
@@ -420,7 +417,7 @@ const Home = () => {
                 </div>
               </div>
               
-              <div className="absolute top-12 right-80 group">
+              <div className="absolute top-20 right-1/3 group">
                 <div className="w-4 h-4 bg-neon-blue rounded-full border-2 border-white cursor-pointer transform hover:scale-110 transition-transform"></div>
                 <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
                   <div className="bg-black text-white px-3 py-1 rounded text-sm whitespace-nowrap">
@@ -429,7 +426,7 @@ const Home = () => {
                 </div>
               </div>
               
-              <div className="absolute top-32 right-56 group">
+              <div className="absolute top-48 right-1/4 group">
                 <div className="w-4 h-4 bg-neon-blue rounded-full border-2 border-white cursor-pointer transform hover:scale-110 transition-transform"></div>
                 <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
                   <div className="bg-black text-white px-3 py-1 rounded text-sm whitespace-nowrap">
