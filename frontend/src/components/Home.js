@@ -330,8 +330,8 @@ const Home = () => {
               <div className="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
                 <div className="relative">
                   <img 
-                    src="https://images.pexels.com/photos/2432221/pexels-photo-2432221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-                    alt="GENIAL Marais - Storefront de nuit"
+                    src="https://images.pexels.com/photos/32992284/pexels-photo-32992284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="GENIAL Marais - Intérieur moderne avec clients"
                     className="w-full h-40 object-cover"
                   />
                   {/* Overlay au survol */}
