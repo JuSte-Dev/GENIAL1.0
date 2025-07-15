@@ -400,7 +400,7 @@ const Home = () => {
                       
                       <rect x="450" y="100" width="12" height="20" fill="#ecf0f1"/>
                       <polygon points="456,100 450,90 462,90" fill="#ecf0f1"/>
-                      <text x="456" y="85" text-anchor="middle" fill="#7f8c8d" font-family="Arial" font-size="8">Sacré-Cœur</text>
+                      <text x="456" y="85" text-anchor="middle" fill="#7f8c8d" font-family="Arial" font-size="8">Sacre-Coeur</text>
                       
                       <rect x="550" y="180" width="15" height="25" fill="#f39c12"/>
                       <text x="557" y="175" text-anchor="middle" fill="#f39c12" font-family="Arial" font-size="8">Bastille</text>
