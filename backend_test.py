@@ -11,7 +11,7 @@ from datetime import datetime, timedelta
 from typing import Dict, Any, Optional
 
 class GenialMarketAPITester:
-    def __init__(self, base_url="https://a0601c58-757a-4075-9855-a9876e4ab83a.preview.emergentagent.com"):
+    def __init__(self, base_url="https://f8013875-73c9-4331-9776-fd77e6b3ea13.preview.emergentagent.com"):
         self.base_url = base_url
         self.api_url = f"{base_url}/api"
         self.token = None
