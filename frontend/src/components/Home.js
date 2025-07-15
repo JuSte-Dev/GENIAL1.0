@@ -293,9 +293,9 @@ const Home = () => {
             {/* Établissement 2 - Marais */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <img 
-                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" 
+                src="https://images.unsplash.com/photo-1675306408031-a9aad9f23308?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBiZWFuc3xlbnwwfHx8fDE3NTI1MTExMjF8MA&ixlib=rb-4.1.0&q=85" 
                 alt="GENIAL Marais"
-                className="w-full h-48 object-cover"
+                className="w-full h-64 object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-primary mb-2">GENIAL Marais</h3>
