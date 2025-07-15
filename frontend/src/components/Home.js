@@ -268,11 +268,21 @@ const Home = () => {
       </section>
 
       {/* Nos établissements */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
+      <section className="py-20 relative">
+        {/* Image de fond avec étalage de fruits et légumes */}
+        <div className="absolute inset-0">
+          <img 
+            src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=800"
+            alt="Étalage de fruits et légumes"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/50"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-primary mb-4">Découvrez nos 4 adresses à Paris</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-white mb-4">Découvrez nos 4 adresses à Paris</h2>
+            <p className="text-lg text-white max-w-2xl mx-auto">
               Chacune avec sa propre personnalité et son ambiance unique
             </p>
           </div>
