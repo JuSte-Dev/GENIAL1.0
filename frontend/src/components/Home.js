@@ -364,63 +364,18 @@ const Home = () => {
           <div className="bg-white rounded-lg p-6 shadow-lg">
             <h3 className="text-2xl font-bold text-primary mb-4 text-center">Trouvez-nous dans Paris</h3>
             <div className="relative h-96 bg-gray-100 rounded-lg overflow-hidden">
-              <div 
-                className="w-full h-full bg-cover bg-center"
-                style={{
-                  backgroundImage: `url('data:image/svg+xml;base64,${btoa(`
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
-                      <rect width="800" height="400" fill="#e8f4f8"/>
-                      <path d="M100 200 Q200 150 300 200 T500 200 Q600 150 700 200" stroke="#3498db" stroke-width="3" fill="none"/>
-                      <path d="M150 100 Q250 50 350 100 T550 100 Q650 50 750 100" stroke="#2980b9" stroke-width="2" fill="none"/>
-                      <path d="M50 300 Q150 250 250 300 T450 300 Q550 250 650 300" stroke="#3498db" stroke-width="2" fill="none"/>
-                      
-                      <!-- Arrondissements -->
-                      <circle cx="200" cy="150" r="80" fill="#bdc3c7" opacity="0.3"/>
-                      <circle cx="300" cy="200" r="60" fill="#95a5a6" opacity="0.3"/>
-                      <circle cx="500" cy="180" r="90" fill="#7f8c8d" opacity="0.3"/>
-                      <circle cx="600" cy="220" r="70" fill="#95a5a6" opacity="0.3"/>
-                      
-                      <!-- Établissements GENIAL -->
-                      <circle cx="180" cy="160" r="8" fill="#0066ff" stroke="#fff" stroke-width="2"/>
-                      <text x="180" y="145" text-anchor="middle" fill="#0066ff" font-family="Arial" font-size="10" font-weight="bold">Saint-Germain</text>
-                      
-                      <circle cx="280" cy="190" r="8" fill="#0066ff" stroke="#fff" stroke-width="2"/>
-                      <text x="280" y="175" text-anchor="middle" fill="#0066ff" font-family="Arial" font-size="10" font-weight="bold">Marais</text>
-                      
-                      <circle cx="480" cy="120" r="8" fill="#0066ff" stroke="#fff" stroke-width="2"/>
-                      <text x="480" y="105" text-anchor="middle" fill="#0066ff" font-family="Arial" font-size="10" font-weight="bold">Montmartre</text>
-                      
-                      <circle cx="520" cy="200" r="8" fill="#0066ff" stroke="#fff" stroke-width="2"/>
-                      <text x="520" y="185" text-anchor="middle" fill="#0066ff" font-family="Arial" font-size="10" font-weight="bold">Bastille</text>
-                      
-                      <!-- Landmarks -->
-                      <rect x="350" y="160" width="8" height="15" fill="#8b4513"/>
-                      <polygon points="354,160 350,150 358,150" fill="#e74c3c"/>
-                      <text x="354" y="145" text-anchor="middle" fill="#8b4513" font-family="Arial" font-size="8">Tour Eiffel</text>
-                      
-                      <rect x="450" y="100" width="12" height="20" fill="#ecf0f1"/>
-                      <polygon points="456,100 450,90 462,90" fill="#ecf0f1"/>
-                      <text x="456" y="85" text-anchor="middle" fill="#7f8c8d" font-family="Arial" font-size="8">Sacre-Coeur</text>
-                      
-                      <rect x="550" y="180" width="15" height="25" fill="#f39c12"/>
-                      <text x="557" y="175" text-anchor="middle" fill="#f39c12" font-family="Arial" font-size="8">Bastille</text>
-                      
-                      <text x="400" y="350" text-anchor="middle" fill="#34495e" font-family="Arial" font-size="16" font-weight="bold">PARIS - 4 établissements GENIAL</text>
-                      
-                      <!-- Legende -->
-                      <rect x="20" y="20" width="150" height="60" fill="#fff" opacity="0.9" rx="5"/>
-                      <circle cx="35" cy="35" r="4" fill="#0066ff"/>
-                      <text x="50" y="39" fill="#2c3e50" font-family="Arial" font-size="12">GENIAL Market</text>
-                      <rect x="30" y="45" width="6" height="10" fill="#8b4513"/>
-                      <text x="50" y="54" fill="#2c3e50" font-family="Arial" font-size="12">Monuments</text>
-                      <path d="M30 62 Q35 58 40 62" stroke="#3498db" stroke-width="2" fill="none"/>
-                      <text x="50" y="66" fill="#2c3e50" font-family="Arial" font-size="12">Seine</text>
-                    </svg>
-                  `)}`
-                }}
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10499.123456789!2d2.3522219!3d48.8566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sParis%2C%20France!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="rounded-lg"
               />
               
-              {/* Points interactifs */}
+              {/* Points interactifs par-dessus la carte */}
               <div className="absolute top-20 left-36 group">
                 <div className="w-4 h-4 bg-neon-blue rounded-full border-2 border-white cursor-pointer transform hover:scale-110 transition-transform"></div>
                 <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
