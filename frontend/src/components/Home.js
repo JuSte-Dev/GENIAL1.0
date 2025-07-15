@@ -270,30 +270,9 @@ const Home = () => {
             {/* Établissement 1 - Saint-Germain */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <img 
-                src="/api/placeholder/400/300" 
+                src="https://images.unsplash.com/photo-1709289025780-a750386056e2" 
                 alt="GENIAL Saint-Germain"
                 className="w-full h-48 object-cover"
-                style={{
-                  backgroundImage: `url('data:image/svg+xml;base64,${btoa(`
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
-                      <rect width="400" height="300" fill="#f8f9fa"/>
-                      <rect x="0" y="0" width="400" height="60" fill="#1a1a1a"/>
-                      <text x="200" y="40" text-anchor="middle" fill="#0066ff" font-family="Arial" font-size="24" font-weight="bold">GENIAL</text>
-                      <text x="200" y="55" text-anchor="middle" fill="#0066ff" font-family="Arial" font-size="12">Market</text>
-                      <rect x="20" y="80" width="360" height="180" fill="#f0f0f0" stroke="#ddd"/>
-                      <circle cx="100" cy="140" r="15" fill="#ff6b6b"/>
-                      <circle cx="130" cy="140" r="15" fill="#4ecdc4"/>
-                      <circle cx="160" cy="140" r="15" fill="#45b7d1"/>
-                      <circle cx="200" cy="140" r="15" fill="#96ceb4"/>
-                      <circle cx="230" cy="140" r="15" fill="#feca57"/>
-                      <circle cx="260" cy="140" r="15" fill="#ff9ff3"/>
-                      <rect x="50" y="200" width="80" height="40" fill="#0066ff" rx="5"/>
-                      <rect x="150" y="200" width="80" height="40" fill="#0066ff" rx="5"/>
-                      <rect x="250" y="200" width="80" height="40" fill="#0066ff" rx="5"/>
-                      <text x="200" y="280" text-anchor="middle" fill="#666" font-family="Arial" font-size="14">Produits frais • Café • Épicerie fine</text>
-                    </svg>
-                  `)}`
-                }}
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-primary mb-2">GENIAL Saint-Germain</h3>
