@@ -260,13 +260,13 @@ const Home = () => {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-4">Nos établissements</h2>
+            <h2 className="text-4xl font-bold text-primary mb-4">Découvrez nos 4 adresses à Paris</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Découvrez nos 4 lieux d'exception dans Paris, chacun avec sa propre personnalité
+              Chacune avec sa propre personnalité et son ambiance unique
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto mb-12">
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-12">
             {/* Établissement 1 - Saint-Germain */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <img 
