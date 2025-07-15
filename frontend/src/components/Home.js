@@ -330,7 +330,7 @@ const Home = () => {
               <div className="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
                 <div className="relative">
                   <img 
-                    src="https://images.unsplash.com/photo-1675306408031-a9aad9f23308?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBiZWFuc3xlbnwwfHx8fDE3NTI1MTExMjF8MA&ixlib=rb-4.1.0&q=85" 
+                    src="https://images.pexels.com/photos/2432221/pexels-photo-2432221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
                     alt="GENIAL Marais - Storefront de nuit"
                     className="w-full h-40 object-cover"
                   />
