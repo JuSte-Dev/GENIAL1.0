@@ -268,119 +268,209 @@ const Home = () => {
           
           {/* Carrousel des établissements */}
           <div className="relative overflow-hidden mb-12">
-            <div className="flex animate-scroll space-x-6">
+            {/* Flèche gauche */}
+            <button 
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-2 shadow-lg transition-all duration-300"
+              onClick={() => document.querySelector('.carousel-container').scrollBy({ left: -320, behavior: 'smooth' })}
+            >
+              <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            
+            {/* Flèche droite */}
+            <button 
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-2 shadow-lg transition-all duration-300"
+              onClick={() => document.querySelector('.carousel-container').scrollBy({ left: 320, behavior: 'smooth' })}
+            >
+              <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+
+            <div className="flex animate-scroll space-x-6 carousel-container" style={{ animationPlayState: 'running' }}>
               {/* Établissement 1 - Saint-Germain */}
-              <div className="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <img 
-                  src="https://images.unsplash.com/photo-1631021967261-c57ee4dfa9bb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHx2ZWdldGFibGUlMjBiYXNrZXR8ZW58MHx8fHwxNzUyNDIxNTY2fDA&ixlib=rb-4.1.0&q=85" 
-                  alt="GENIAL Saint-Germain - Terrasse avec parasols"
-                  className="w-full h-40 object-cover"
-                />
+              <div className="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
+                <div className="relative">
+                  <img 
+                    src="https://images.unsplash.com/photo-1631021967261-c57ee4dfa9bb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHx2ZWdldGFibGUlMjBiYXNrZXR8ZW58MHx8fHwxNzUyNDIxNTY2fDA&ixlib=rb-4.1.0&q=85" 
+                    alt="GENIAL Saint-Germain - Terrasse avec parasols"
+                    className="w-full h-40 object-cover"
+                  />
+                  {/* Overlay au survol */}
+                  <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="text-white text-center p-4">
+                      <h4 className="font-bold text-lg mb-3">Informations pratiques</h4>
+                      <div className="space-y-2 text-sm">
+                        <div className="flex items-center justify-center space-x-2">
+                          <MapPin className="w-4 h-4" />
+                          <span>45 rue de Rennes, 75006 Paris</span>
+                        </div>
+                        <div className="flex items-center justify-center space-x-2">
+                          <Phone className="w-4 h-4" />
+                          <span>01 42 33 44 55</span>
+                        </div>
+                        <div className="flex items-center justify-center space-x-2">
+                          <Clock className="w-4 h-4" />
+                          <span>7h00 - 22h30</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div className="p-4">
                   <h3 className="text-lg font-bold text-primary mb-2">GENIAL Saint-Germain</h3>
-                  <p className="text-gray-600 mb-2 text-sm">
-                    <MapPin className="w-4 h-4 inline mr-1" />
-                    45 rue de Rennes, 75006 Paris
-                  </p>
-                  <p className="text-xs text-gray-500 mb-3">
+                  <p className="text-xs text-gray-500">
                     Notre flagship store au cœur de Saint-Germain. Espace dégustation, ateliers cuisine et terrasse.
                   </p>
-                  <div className="text-xs text-gray-600">
-                    <Clock className="w-3 h-3 inline mr-1" />
-                    7h00 - 22h30
-                  </div>
                 </div>
               </div>
 
               {/* Établissement 2 - Marais */}
-              <div className="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <img 
-                  src="https://images.unsplash.com/photo-1675306408031-a9aad9f23308?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBiZWFuc3xlbnwwfHx8fDE3NTI1MTExMjF8MA&ixlib=rb-4.1.0&q=85" 
-                  alt="GENIAL Marais - Storefront de nuit"
-                  className="w-full h-40 object-cover"
-                />
+              <div className="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
+                <div className="relative">
+                  <img 
+                    src="https://images.unsplash.com/photo-1675306408031-a9aad9f23308?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBiZWFuc3xlbnwwfHx8fDE3NTI1MTExMjF8MA&ixlib=rb-4.1.0&q=85" 
+                    alt="GENIAL Marais - Storefront de nuit"
+                    className="w-full h-40 object-cover"
+                  />
+                  {/* Overlay au survol */}
+                  <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="text-white text-center p-4">
+                      <h4 className="font-bold text-lg mb-3">Informations pratiques</h4>
+                      <div className="space-y-2 text-sm">
+                        <div className="flex items-center justify-center space-x-2">
+                          <MapPin className="w-4 h-4" />
+                          <span>23 rue des Rosiers, 75004 Paris</span>
+                        </div>
+                        <div className="flex items-center justify-center space-x-2">
+                          <Phone className="w-4 h-4" />
+                          <span>01 42 33 44 56</span>
+                        </div>
+                        <div className="flex items-center justify-center space-x-2">
+                          <Clock className="w-4 h-4" />
+                          <span>7h00 - 22h30</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div className="p-4">
                   <h3 className="text-lg font-bold text-primary mb-2">GENIAL Marais</h3>
-                  <p className="text-gray-600 mb-2 text-sm">
-                    <MapPin className="w-4 h-4 inline mr-1" />
-                    23 rue des Rosiers, 75004 Paris
-                  </p>
-                  <p className="text-xs text-gray-500 mb-3">
+                  <p className="text-xs text-gray-500">
                     Dans un cadre historique du Marais. Spécialités artisanales et produits du terroir français.
                   </p>
-                  <div className="text-xs text-gray-600">
-                    <Clock className="w-3 h-3 inline mr-1" />
-                    7h00 - 22h30
-                  </div>
                 </div>
               </div>
 
               {/* Établissement 3 - Montmartre */}
-              <div className="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <img 
-                  src="https://images.unsplash.com/photo-1579113800032-c38bd7635818?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMHZlZ2V0YWJsZXN8ZW58MHx8fHwxNzUyNTA1MDI0fDA&ixlib=rb-4.1.0&q=85" 
-                  alt="GENIAL Montmartre - Intérieur avec clients"
-                  className="w-full h-40 object-cover"
-                />
+              <div className="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
+                <div className="relative">
+                  <img 
+                    src="https://images.unsplash.com/photo-1579113800032-c38bd7635818?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMHZlZ2V0YWJsZXN8ZW58MHx8fHwxNzUyNTA1MDI0fDA&ixlib=rb-4.1.0&q=85" 
+                    alt="GENIAL Montmartre - Intérieur avec clients"
+                    className="w-full h-40 object-cover"
+                  />
+                  {/* Overlay au survol */}
+                  <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="text-white text-center p-4">
+                      <h4 className="font-bold text-lg mb-3">Informations pratiques</h4>
+                      <div className="space-y-2 text-sm">
+                        <div className="flex items-center justify-center space-x-2">
+                          <MapPin className="w-4 h-4" />
+                          <span>8 place du Tertre, 75018 Paris</span>
+                        </div>
+                        <div className="flex items-center justify-center space-x-2">
+                          <Phone className="w-4 h-4" />
+                          <span>01 42 33 44 57</span>
+                        </div>
+                        <div className="flex items-center justify-center space-x-2">
+                          <Clock className="w-4 h-4" />
+                          <span>7h00 - 22h30</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div className="p-4">
                   <h3 className="text-lg font-bold text-primary mb-2">GENIAL Montmartre</h3>
-                  <p className="text-gray-600 mb-2 text-sm">
-                    <MapPin className="w-4 h-4 inline mr-1" />
-                    8 place du Tertre, 75018 Paris
-                  </p>
-                  <p className="text-xs text-gray-500 mb-3">
+                  <p className="text-xs text-gray-500">
                     Ambiance bohème au pied du Sacré-Cœur. Terrasse avec vue et spécialités locales.
                   </p>
-                  <div className="text-xs text-gray-600">
-                    <Clock className="w-3 h-3 inline mr-1" />
-                    7h00 - 22h30
-                  </div>
                 </div>
               </div>
 
               {/* Établissement 4 - Bastille */}
-              <div className="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <img 
-                  src="https://images.unsplash.com/photo-1516154767575-2146adebdf32?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHx3aW5lJTIwYm90dGxlc3xlbnwwfHx8fDE3NTI1MDUwODB8MA&ixlib=rb-4.1.0&q=85" 
-                  alt="GENIAL Bastille - Intérieur avec fruits/légumes"
-                  className="w-full h-40 object-cover"
-                />
+              <div className="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
+                <div className="relative">
+                  <img 
+                    src="https://images.unsplash.com/photo-1516154767575-2146adebdf32?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHx3aW5lJTIwYm90dGxlc3xlbnwwfHx8fDE3NTI1MDUwODB8MA&ixlib=rb-4.1.0&q=85" 
+                    alt="GENIAL Bastille - Intérieur avec fruits/légumes"
+                    className="w-full h-40 object-cover"
+                  />
+                  {/* Overlay au survol */}
+                  <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="text-white text-center p-4">
+                      <h4 className="font-bold text-lg mb-3">Informations pratiques</h4>
+                      <div className="space-y-2 text-sm">
+                        <div className="flex items-center justify-center space-x-2">
+                          <MapPin className="w-4 h-4" />
+                          <span>12 rue de la Roquette, 75011 Paris</span>
+                        </div>
+                        <div className="flex items-center justify-center space-x-2">
+                          <Phone className="w-4 h-4" />
+                          <span>01 42 33 44 58</span>
+                        </div>
+                        <div className="flex items-center justify-center space-x-2">
+                          <Clock className="w-4 h-4" />
+                          <span>7h00 - 22h30</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div className="p-4">
                   <h3 className="text-lg font-bold text-primary mb-2">GENIAL Bastille</h3>
-                  <p className="text-gray-600 mb-2 text-sm">
-                    <MapPin className="w-4 h-4 inline mr-1" />
-                    12 rue de la Roquette, 75011 Paris
-                  </p>
-                  <p className="text-xs text-gray-500 mb-3">
+                  <p className="text-xs text-gray-500">
                     Concept moderne dans le quartier branché. Espace co-working et événements nocturnes.
                   </p>
-                  <div className="text-xs text-gray-600">
-                    <Clock className="w-3 h-3 inline mr-1" />
-                    7h00 - 22h30
-                  </div>
                 </div>
               </div>
               
               {/* Dupliquer pour défilement continu */}
-              <div className="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <img 
-                  src="https://images.unsplash.com/photo-1631021967261-c57ee4dfa9bb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHx2ZWdldGFibGUlMjBiYXNrZXR8ZW58MHx8fHwxNzUyNDIxNTY2fDA&ixlib=rb-4.1.0&q=85" 
-                  alt="GENIAL Saint-Germain - Terrasse avec parasols"
-                  className="w-full h-40 object-cover"
-                />
+              <div className="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
+                <div className="relative">
+                  <img 
+                    src="https://images.unsplash.com/photo-1631021967261-c57ee4dfa9bb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHx2ZWdldGFibGUlMjBiYXNrZXR8ZW58MHx8fHwxNzUyNDIxNTY2fDA&ixlib=rb-4.1.0&q=85" 
+                    alt="GENIAL Saint-Germain - Terrasse avec parasols"
+                    className="w-full h-40 object-cover"
+                  />
+                  {/* Overlay au survol */}
+                  <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="text-white text-center p-4">
+                      <h4 className="font-bold text-lg mb-3">Informations pratiques</h4>
+                      <div className="space-y-2 text-sm">
+                        <div className="flex items-center justify-center space-x-2">
+                          <MapPin className="w-4 h-4" />
+                          <span>45 rue de Rennes, 75006 Paris</span>
+                        </div>
+                        <div className="flex items-center justify-center space-x-2">
+                          <Phone className="w-4 h-4" />
+                          <span>01 42 33 44 55</span>
+                        </div>
+                        <div className="flex items-center justify-center space-x-2">
+                          <Clock className="w-4 h-4" />
+                          <span>7h00 - 22h30</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div className="p-4">
                   <h3 className="text-lg font-bold text-primary mb-2">GENIAL Saint-Germain</h3>
-                  <p className="text-gray-600 mb-2 text-sm">
-                    <MapPin className="w-4 h-4 inline mr-1" />
-                    45 rue de Rennes, 75006 Paris
-                  </p>
-                  <p className="text-xs text-gray-500 mb-3">
+                  <p className="text-xs text-gray-500">
                     Notre flagship store au cœur de Saint-Germain. Espace dégustation, ateliers cuisine et terrasse.
                   </p>
-                  <div className="text-xs text-gray-600">
-                    <Clock className="w-3 h-3 inline mr-1" />
-                    7h00 - 22h30
-                  </div>
                 </div>
               </div>
             </div>
