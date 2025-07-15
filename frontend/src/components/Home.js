@@ -181,11 +181,11 @@ const Home = () => {
             </div>
           </div>
 
-          {/* 4. Barché - 18h30-22h00 */}
+          {/* 4. Barché d'exception - 18h30-22h00 */}
           <div className="relative h-screen group cursor-pointer overflow-hidden" style={{border: 'none', margin: '0px', padding: '0px'}}>
             <img 
-              src="https://images.unsplash.com/photo-1586370434639-0fe43b2d32d6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
-              alt="Barché - Bouteilles de vin d'exception"
+              src="https://images.unsplash.com/photo-1510427692488-993819e1dc97?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
+              alt="Barché d'exception - Bouteilles de vin"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
@@ -195,7 +195,7 @@ const Home = () => {
                   18h30 - 22h00
                 </span>
                 <h3 className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-white">
-                  Barché
+                  Barché d'exception
                 </h3>
                 <p className="text-lg md:text-xl mb-6 text-white leading-relaxed">
                   Venez prendre un verre dans notre bar aux couleurs du marché et vous pourrez même vraiment le faire
@@ -212,8 +212,8 @@ const Home = () => {
           {/* 5. Expérience gastronomique - 18h30-22h00 */}
           <div className="relative h-screen group cursor-pointer overflow-hidden" style={{border: 'none', margin: '0px', padding: '0px'}}>
             <img 
-              src="https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
-              alt="Expérience gastronomique - Mains sur table en bois"
+              src="https://images.unsplash.com/photo-1498579687545-dcb0c1871e97?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
+              alt="Expérience gastronomique - Mains préparant sur table bois"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
