@@ -367,8 +367,8 @@ const Home = () => {
               <div className="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
                 <div className="relative">
                   <img 
-                    src="https://images.pexels.com/photos/32992284/pexels-photo-32992284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-                    alt="GENIAL Montmartre - Intérieur avec clients"
+                    src="https://images.unsplash.com/photo-1625066927104-d51b9527cc62?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwzfHxtYXJrZXQlMjBzdG9yZWZyb250fGVufDB8fHx8MTc1MjU3NjY3N3ww&ixlib=rb-4.1.0&q=85" 
+                    alt="GENIAL Montmartre - Intérieur avec grande table"
                     className="w-full h-40 object-cover"
                   />
                   {/* Overlay au survol */}
