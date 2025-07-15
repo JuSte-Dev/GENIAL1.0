@@ -96,9 +96,9 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border-0">
           {/* 1. Café matinal - 7h00-11h00 */}
-          <div className="relative h-screen group cursor-pointer overflow-hidden">
+          <div className="relative h-screen group cursor-pointer overflow-hidden border-0">
             <img 
               src="https://images.unsplash.com/photo-1675306408031-a9aad9f23308?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBiZWFuc3xlbnwwfHx8fDE3NTI1MTExMjF8MA&ixlib=rb-4.1.0&q=85&w=1200&h=1200"
               alt="Café du matin"
@@ -126,10 +126,10 @@ const Home = () => {
           </div>
 
           {/* 2. Lunch gourmand - 12h00-15h00 */}
-          <div className="relative h-screen group cursor-pointer overflow-hidden">
+          <div className="relative h-screen group cursor-pointer overflow-hidden border-0">
             <img 
-              src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
-              alt="Lunch gourmand - Focaccia"
+              src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
+              alt="Lunch gourmand - Salade végétarienne"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
@@ -154,9 +154,9 @@ const Home = () => {
           </div>
 
           {/* 3. Marché d'exception - 15h00-18h30 */}
-          <div className="relative h-screen group cursor-pointer overflow-hidden">
+          <div className="relative h-screen group cursor-pointer overflow-hidden border-0">
             <img 
-              src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
+              src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
               alt="Marché d'exception - Fruits et légumes"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
@@ -182,7 +182,7 @@ const Home = () => {
           </div>
 
           {/* 4. Barché - 18h30-22h00 */}
-          <div className="relative h-screen group cursor-pointer overflow-hidden">
+          <div className="relative h-screen group cursor-pointer overflow-hidden border-0">
             <img 
               src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
               alt="Barché - Apéro dinatoire"
@@ -210,10 +210,10 @@ const Home = () => {
           </div>
 
           {/* 5. Expérience gastronomique - 18h30-22h00 */}
-          <div className="relative h-screen group cursor-pointer overflow-hidden">
+          <div className="relative h-screen group cursor-pointer overflow-hidden border-0">
             <img 
-              src="https://images.unsplash.com/photo-1735353783469-52314e87dd3f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwxfHxkdWNrJTIwc2FsYWR8ZW58MHx8fHwxNzUyNTE3MDU1fDA&ixlib=rb-4.1.0&q=85&w=1200&h=1200"
-              alt="Expérience gastronomique"
+              src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
+              alt="Expérience gastronomique - Préparation collective"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
