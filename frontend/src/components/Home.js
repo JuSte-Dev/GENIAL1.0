@@ -96,36 +96,8 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-          {/* Expérience gastronomique - Plein écran */}
-          <div className="relative h-screen group cursor-pointer overflow-hidden">
-            <img 
-              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
-              alt="Expérience gastronomique"
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
-            <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12">
-              <div className="text-white max-w-md">
-                <span className="inline-block bg-neon-blue text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                  18h30 - 22h00
-                </span>
-                <h3 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-                  Expérience gastronomique
-                </h3>
-                <p className="text-lg md:text-xl mb-6 text-gray-200 leading-relaxed">
-                  Ateliers culinaires, dégustations et soirées découverte avec nos chefs partenaires
-                </p>
-                <div className="flex items-center space-x-4">
-                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full">Dégustation</span>
-                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full">Ateliers</span>
-                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full">Événements</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Café matinal - Plein écran */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
+          {/* 1. Café matinal - 7h00-11h00 */}
           <div className="relative h-screen group cursor-pointer overflow-hidden">
             <img 
               src="https://images.unsplash.com/photo-1675306408031-a9aad9f23308?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBiZWFuc3xlbnwwfHx8fDE3NTI1MTExMjF8MA&ixlib=rb-4.1.0&q=85&w=1200&h=1200"
@@ -138,26 +110,26 @@ const Home = () => {
                 <span className="inline-block bg-neon-blue text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
                   7h00 - 11h00
                 </span>
-                <h3 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+                <h3 className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-white">
                   Café matinal
                 </h3>
-                <p className="text-lg md:text-xl mb-6 text-gray-200 leading-relaxed">
+                <p className="text-lg md:text-xl mb-6 text-white leading-relaxed">
                   Réveillez-vous avec nos cafés d'exception, pâtisseries fraîches et petit-déjeuner gourmand
                 </p>
                 <div className="flex items-center space-x-4">
-                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full">Café</span>
-                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full">Pâtisseries</span>
-                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full">Petit-déj</span>
+                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full text-white">Café</span>
+                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full text-white">Pâtisseries</span>
+                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full text-white">Petit-déj</span>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Lunch gourmand - Plein écran */}
+          {/* 2. Lunch gourmand - 12h00-15h00 */}
           <div className="relative h-screen group cursor-pointer overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1579113800032-c38bd7635818?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMHZlZ2V0YWJsZXN8ZW58MHx8fHwxNzUyNTA1MDI0fDA&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
-              alt="Lunch gourmand"
+              src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
+              alt="Lunch gourmand - Focaccia"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
@@ -166,26 +138,26 @@ const Home = () => {
                 <span className="inline-block bg-neon-blue text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
                   12h00 - 15h00
                 </span>
-                <h3 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+                <h3 className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-white">
                   Lunch gourmand
                 </h3>
-                <p className="text-lg md:text-xl mb-6 text-gray-200 leading-relaxed">
-                  Salades fraîches, plats du jour et créations culinaires dans un cadre convivial
+                <p className="text-lg md:text-xl mb-6 text-white leading-relaxed">
+                  Salades fraîches, focaccias artisanales et créations culinaires dans un cadre convivial
                 </p>
                 <div className="flex items-center space-x-4">
-                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full">Salades</span>
-                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full">Plats chauds</span>
-                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full">Créations</span>
+                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full text-white">Salades</span>
+                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full text-white">Focaccias</span>
+                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full text-white">Créations</span>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Marché d'exception - Plein écran */}
+          {/* 3. Marché d'exception - 15h00-18h30 */}
           <div className="relative h-screen group cursor-pointer overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1516154767575-2146adebdf32?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHx3aW5lJTIwYm90dGxlc3xlbnwwfHx8fDE3NTI1MDUwODB8MA&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
-              alt="Marché d'exception"
+              src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
+              alt="Marché d'exception - Fruits et légumes"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
@@ -194,16 +166,72 @@ const Home = () => {
                 <span className="inline-block bg-neon-blue text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
                   15h00 - 18h30
                 </span>
-                <h3 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+                <h3 className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-white">
                   Marché d'exception
                 </h3>
-                <p className="text-lg md:text-xl mb-6 text-gray-200 leading-relaxed">
-                  Découvrez nos produits d'exception, vins fins et spécialités artisanales
+                <p className="text-lg md:text-xl mb-6 text-white leading-relaxed">
+                  Découvrez nos fruits et légumes d'exception, sélectionnés chez les meilleurs producteurs
                 </p>
                 <div className="flex items-center space-x-4">
-                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full">Produits</span>
-                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full">Vins</span>
-                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full">Artisanat</span>
+                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full text-white">Fruits</span>
+                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full text-white">Légumes</span>
+                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full text-white">Bio</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 4. Barché - 18h30-22h00 */}
+          <div className="relative h-screen group cursor-pointer overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
+              alt="Barché - Apéro dinatoire"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
+            <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12">
+              <div className="text-white max-w-md">
+                <span className="inline-block bg-neon-blue text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  18h30 - 22h00
+                </span>
+                <h3 className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-white">
+                  Barché
+                </h3>
+                <p className="text-lg md:text-xl mb-6 text-white leading-relaxed">
+                  Venez prendre un verre dans notre bar aux couleurs du marché et vous pourrez même vraiment le faire
+                </p>
+                <div className="flex items-center space-x-4">
+                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full text-white">Apéro</span>
+                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full text-white">Cocktails</span>
+                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full text-white">Convivial</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 5. Expérience gastronomique - 18h30-22h00 */}
+          <div className="relative h-screen group cursor-pointer overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1735353783469-52314e87dd3f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwxfHxkdWNrJTIwc2FsYWR8ZW58MHx8fHwxNzUyNTE3MDU1fDA&ixlib=rb-4.1.0&q=85&w=1200&h=1200"
+              alt="Expérience gastronomique"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
+            <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12">
+              <div className="text-white max-w-md">
+                <span className="inline-block bg-neon-blue text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  18h30 - 22h00
+                </span>
+                <h3 className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-white">
+                  Expérience gastronomique
+                </h3>
+                <p className="text-lg md:text-xl mb-6 text-white leading-relaxed">
+                  Ateliers culinaires, dégustations et soirées découverte avec nos chefs partenaires
+                </p>
+                <div className="flex items-center space-x-4">
+                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full text-white">Dégustation</span>
+                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full text-white">Ateliers</span>
+                  <span className="text-sm bg-white/20 px-3 py-1 rounded-full text-white">Événements</span>
                 </div>
               </div>
             </div>
