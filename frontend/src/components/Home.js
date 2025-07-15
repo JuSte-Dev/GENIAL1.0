@@ -339,34 +339,9 @@ const Home = () => {
             {/* Établissement 4 - Bastille */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <img 
-                src="/api/placeholder/400/300" 
+                src="https://images.pexels.com/photos/32967799/pexels-photo-32967799.jpeg" 
                 alt="GENIAL Bastille"
                 className="w-full h-48 object-cover"
-                style={{
-                  backgroundImage: `url('data:image/svg+xml;base64,${btoa(`
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
-                      <rect width="400" height="300" fill="#34495e"/>
-                      <rect x="0" y="200" width="400" height="100" fill="#2c3e50"/>
-                      <rect x="50" y="50" width="300" height="200" fill="#1a1a1a" rx="10"/>
-                      <rect x="60" y="30" width="280" height="40" fill="#0066ff" rx="5"/>
-                      <text x="200" y="55" text-anchor="middle" fill="#fff" font-family="Arial" font-size="24" font-weight="bold">GENIAL</text>
-                      <rect x="80" y="80" width="240" height="120" fill="#f8f9fa"/>
-                      <rect x="100" y="100" width="50" height="30" fill="#e74c3c"/>
-                      <rect x="175" y="100" width="50" height="30" fill="#f39c12"/>
-                      <rect x="250" y="100" width="50" height="30" fill="#2ecc71"/>
-                      <rect x="100" y="140" width="50" height="30" fill="#3498db"/>
-                      <rect x="175" y="140" width="50" height="30" fill="#9b59b6"/>
-                      <rect x="250" y="140" width="50" height="30" fill="#1abc9c"/>
-                      <rect x="90" y="220" width="60" height="20" fill="#8b4513" rx="3"/>
-                      <rect x="170" y="220" width="60" height="20" fill="#8b4513" rx="3"/>
-                      <rect x="250" y="220" width="60" height="20" fill="#8b4513" rx="3"/>
-                      <circle cx="365" cy="35" r="5" fill="#f1c40f"/>
-                      <circle cx="380" cy="35" r="5" fill="#f1c40f"/>
-                      <circle cx="395" cy="35" r="5" fill="#f1c40f"/>
-                      <text x="200" y="280" text-anchor="middle" fill="#bdc3c7" font-family="Arial" font-size="12">Quartier branché • Concept moderne</text>
-                    </svg>
-                  `)}`
-                }}
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-primary mb-2">GENIAL Bastille</h3>
