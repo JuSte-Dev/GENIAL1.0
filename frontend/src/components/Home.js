@@ -266,7 +266,7 @@ const Home = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-12">
+          <div className="grid grid-cols-2 gap-8 max-w-6xl mx-auto mb-12">
             {/* Établissement 1 - Saint-Germain */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <img 
