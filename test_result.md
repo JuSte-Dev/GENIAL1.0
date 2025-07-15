@@ -106,7 +106,7 @@ user_problem_statement: "Integrate real images for the 'Nos établissements' sec
 
 frontend:
   - task: "Replace SVG placeholders with actual establishment images"
-    implemented: false
+    implemented: true
     working: "NA"
     file: "/app/frontend/src/components/Home.js"
     stuck_count: 0
@@ -116,6 +116,9 @@ frontend:
       - working: "NA"
         agent: "main"
         comment: "Task identified. Need to replace 4 SVG placeholders in 'Nos établissements' section (lines 271-450) with user-provided images of GENIAL establishments."
+      - working: "NA"
+        agent: "main"
+        comment: "Successfully replaced all 4 SVG placeholders with actual establishment images: Saint-Germain (storefront), Marais (interior dining), Montmartre (restaurant interior), Bastille (professional establishment). Images sourced from Unsplash and Pexels."
 
 backend:
   - task: "No backend changes required"
