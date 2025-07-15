@@ -293,29 +293,9 @@ const Home = () => {
             {/* Établissement 2 - Marais */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <img 
-                src="/api/placeholder/400/300" 
+                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" 
                 alt="GENIAL Marais"
                 className="w-full h-48 object-cover"
-                style={{
-                  backgroundImage: `url('data:image/svg+xml;base64,${btoa(`
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
-                      <rect width="400" height="300" fill="#2c3e50"/>
-                      <rect x="0" y="100" width="400" height="200" fill="#34495e"/>
-                      <rect x="50" y="120" width="300" height="160" fill="#1a1a1a" rx="10"/>
-                      <rect x="70" y="140" width="260" height="120" fill="#f8f9fa"/>
-                      <text x="200" y="90" text-anchor="middle" fill="#0066ff" font-family="Arial" font-size="32" font-weight="bold">GENIAL</text>
-                      <text x="200" y="110" text-anchor="middle" fill="#0066ff" font-family="Arial" font-size="14">Market</text>
-                      <rect x="90" y="160" width="40" height="80" fill="#e74c3c"/>
-                      <rect x="140" y="160" width="40" height="80" fill="#f39c12"/>
-                      <rect x="190" y="160" width="40" height="80" fill="#2ecc71"/>
-                      <rect x="240" y="160" width="40" height="80" fill="#3498db"/>
-                      <rect x="290" y="160" width="40" height="80" fill="#9b59b6"/>
-                      <circle cx="60" cy="60" r="8" fill="#f1c40f"/>
-                      <circle cx="340" cy="60" r="8" fill="#f1c40f"/>
-                      <text x="200" y="280" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12">Ambiance historique • Produits artisanaux</text>
-                    </svg>
-                  `)}`
-                }}
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-primary mb-2">GENIAL Marais</h3>
