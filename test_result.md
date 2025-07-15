@@ -156,3 +156,5 @@ agent_communication:
     message: "Task completed successfully. All 4 SVG placeholders have been replaced with actual establishment images from Unsplash and Pexels. Images are properly integrated maintaining the existing layout and styling. Ready for testing."
   - agent: "main"
     message: "Task completed and verified working. Successfully integrated 4 professional establishment images into the 'Nos établissements' section. Fixed btoa encoding issue and confirmed all images display correctly. Website is fully functional."
+  - agent: "testing"
+    message: "Backend testing completed after frontend image replacement task. All core API endpoints are functioning correctly. Health check, authentication, orders, reservations, and contact functionality all working. Minor issue with search functionality due to missing text index on empty products collection, but this doesn't affect core functionality. Database connectivity confirmed. Backend remains fully operational after frontend changes."
