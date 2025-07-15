@@ -704,17 +704,27 @@ const Home = () => {
       </section>
 
       {/* Informations générales */}
-      <section className="py-20 bg-gray-100">
-        <div className="container mx-auto px-4">
+      <section className="py-20 relative">
+        {/* Image de fond avec panier de légumes */}
+        <div className="absolute inset-0">
+          <img 
+            src="https://images.unsplash.com/photo-1540420773420-3366772f4999?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=800"
+            alt="Panier de légumes frais"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/60"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Informations générales</h2>
-            <p className="text-xl text-gray-600">
+            <h2 className="text-4xl font-bold mb-4 text-white">Commandes en ligne</h2>
+            <p className="text-xl text-white">
               Toutes les informations utiles pour nous contacter
             </p>
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-lg p-8 shadow-lg">
+            <div className="bg-white/90 backdrop-blur-sm rounded-lg p-8 shadow-lg">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="text-center">
                   <Mail className="w-12 h-12 text-primary mx-auto mb-4" />
