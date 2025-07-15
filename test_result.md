@@ -107,11 +107,11 @@ user_problem_statement: "Integrate real images for the 'Nos établissements' sec
 frontend:
   - task: "Replace SVG placeholders with actual establishment images"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/frontend/src/components/Home.js"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
@@ -119,6 +119,9 @@ frontend:
       - working: "NA"
         agent: "main"
         comment: "Successfully replaced all 4 SVG placeholders with actual establishment images: Saint-Germain (storefront), Marais (interior dining), Montmartre (restaurant interior), Bastille (professional establishment). Images sourced from Unsplash and Pexels."
+      - working: true
+        agent: "main"
+        comment: "Task completed and tested successfully. All 4 establishment images are now displaying correctly in the 'Nos établissements' section. Fixed btoa encoding issue by removing special characters from SVG map. Website is loading properly and images are well-integrated."
 
 backend:
   - task: "No backend changes required"
