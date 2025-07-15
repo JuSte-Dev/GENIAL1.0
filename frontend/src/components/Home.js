@@ -240,13 +240,23 @@ const Home = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-primary text-white">
-        <div className="container mx-auto px-4">
+      <section className="py-20 relative">
+        {/* Image de fond avec fruits et légumes */}
+        <div className="absolute inset-0">
+          <img 
+            src="https://images.unsplash.com/photo-1542838132-92c53300491e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=800"
+            alt="Fruits et légumes colorés"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/60"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-4xl font-bold mb-6 text-white">
               Prêt à découvrir GENIAL ?
             </h2>
-            <p className="text-xl mb-10 opacity-90">
+            <p className="text-xl mb-10 text-white opacity-90">
               Commandez en ligne, réservez votre table ou venez nous rendre visite au marché
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
