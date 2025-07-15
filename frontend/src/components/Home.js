@@ -293,7 +293,7 @@ const Home = () => {
             {/* Établissement 2 - Marais */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <img 
-                src="https://images.unsplash.com/photo-1675306408031-a9aad9f23308?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBiZWFuc3xlbnwwfHx8fDE3NTI1MTExMjF8MA&ixlib=rb-4.1.0&q=85" 
+                src="https://images.unsplash.com/photo-1698466632366-09fa1d925de6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwxfHxncm9jZXJ5JTIwc3RvcmUlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NTI1NzY2ODZ8MA&ixlib=rb-4.1.0&q=85" 
                 alt="GENIAL Marais"
                 className="w-full h-64 object-cover"
               />
