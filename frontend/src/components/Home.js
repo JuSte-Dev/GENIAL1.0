@@ -692,149 +692,33 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Location & Contact */}
+      {/* Informations générales */}
       <section className="py-20 bg-gray-100">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Informations pratiques</h2>
+            <h2 className="text-4xl font-bold mb-4">Informations générales</h2>
             <p className="text-xl text-gray-600">
-              Toutes nos adresses et informations utiles
+              Toutes les informations utiles pour nous contacter
             </p>
           </div>
 
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-              {/* Saint-Germain */}
-              <div className="bg-white rounded-lg p-6 shadow-lg">
-                <h3 className="text-lg font-bold text-primary mb-4">Saint-Germain</h3>
-                <div className="space-y-3">
-                  <div className="flex items-start space-x-3">
-                    <MapPin className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Adresse</p>
-                      <p className="text-xs text-gray-600">45 rue de Rennes<br />75006 Paris</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <Phone className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Téléphone</p>
-                      <p className="text-xs text-gray-600">01 42 33 44 55</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <Clock className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Horaires</p>
-                      <p className="text-xs text-gray-600">7h00 - 22h30</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Marais */}
-              <div className="bg-white rounded-lg p-6 shadow-lg">
-                <h3 className="text-lg font-bold text-primary mb-4">Marais</h3>
-                <div className="space-y-3">
-                  <div className="flex items-start space-x-3">
-                    <MapPin className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Adresse</p>
-                      <p className="text-xs text-gray-600">23 rue des Rosiers<br />75004 Paris</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <Phone className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Téléphone</p>
-                      <p className="text-xs text-gray-600">01 42 33 44 56</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <Clock className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Horaires</p>
-                      <p className="text-xs text-gray-600">7h00 - 22h30</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Montmartre */}
-              <div className="bg-white rounded-lg p-6 shadow-lg">
-                <h3 className="text-lg font-bold text-primary mb-4">Montmartre</h3>
-                <div className="space-y-3">
-                  <div className="flex items-start space-x-3">
-                    <MapPin className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Adresse</p>
-                      <p className="text-xs text-gray-600">8 place du Tertre<br />75018 Paris</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <Phone className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Téléphone</p>
-                      <p className="text-xs text-gray-600">01 42 33 44 57</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <Clock className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Horaires</p>
-                      <p className="text-xs text-gray-600">7h00 - 22h30</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Bastille */}
-              <div className="bg-white rounded-lg p-6 shadow-lg">
-                <h3 className="text-lg font-bold text-primary mb-4">Bastille</h3>
-                <div className="space-y-3">
-                  <div className="flex items-start space-x-3">
-                    <MapPin className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Adresse</p>
-                      <p className="text-xs text-gray-600">12 rue de la Roquette<br />75011 Paris</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <Phone className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Téléphone</p>
-                      <p className="text-xs text-gray-600">01 42 33 44 58</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <Clock className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Horaires</p>
-                      <p className="text-xs text-gray-600">7h00 - 22h30</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Informations générales */}
-            <div className="bg-white rounded-lg p-6 shadow-lg">
-              <h3 className="text-2xl font-bold text-primary mb-4 text-center">Informations générales</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-lg p-8 shadow-lg">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="text-center">
-                  <Mail className="w-8 h-8 text-primary mx-auto mb-2" />
-                  <p className="font-semibold">Email général</p>
-                  <p className="text-sm text-gray-600">contact@genial.fr</p>
+                  <Mail className="w-12 h-12 text-primary mx-auto mb-4" />
+                  <h3 className="text-xl font-semibold mb-2">Email général</h3>
+                  <p className="text-gray-600">contact@genial.fr</p>
                 </div>
                 <div className="text-center">
-                  <Phone className="w-8 h-8 text-primary mx-auto mb-2" />
-                  <p className="font-semibold">Service client</p>
-                  <p className="text-sm text-gray-600">01 42 33 44 00</p>
+                  <Phone className="w-12 h-12 text-primary mx-auto mb-4" />
+                  <h3 className="text-xl font-semibold mb-2">Service client</h3>
+                  <p className="text-gray-600">01 42 33 44 00</p>
                 </div>
                 <div className="text-center">
-                  <Clock className="w-8 h-8 text-primary mx-auto mb-2" />
-                  <p className="font-semibold">Horaires</p>
-                  <p className="text-sm text-gray-600">7h00 - 22h30<br />Tous les jours</p>
+                  <Clock className="w-12 h-12 text-primary mx-auto mb-4" />
+                  <h3 className="text-xl font-semibold mb-2">Horaires</h3>
+                  <p className="text-gray-600">7h00 - 22h30<br />Tous les jours</p>
                 </div>
               </div>
             </div>
