@@ -339,9 +339,9 @@ const Home = () => {
             {/* Établissement 4 - Bastille */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <img 
-                src="https://images.pexels.com/photos/32967799/pexels-photo-32967799.jpeg" 
+                src="https://images.unsplash.com/photo-1516154767575-2146adebdf32?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHx3aW5lJTIwYm90dGxlc3xlbnwwfHx8fDE3NTI1MDUwODB8MA&ixlib=rb-4.1.0&q=85" 
                 alt="GENIAL Bastille"
-                className="w-full h-48 object-cover"
+                className="w-full h-64 object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-primary mb-2">GENIAL Bastille</h3>
