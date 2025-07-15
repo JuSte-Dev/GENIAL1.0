@@ -441,8 +441,8 @@ const Home = () => {
               <div className="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
                 <div className="relative">
                   <img 
-                    src="https://images.unsplash.com/photo-1631021967261-c57ee4dfa9bb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHx2ZWdldGFibGUlMjBiYXNrZXR8ZW58MHx8fHwxNzUyNDIxNTY2fDA&ixlib=rb-4.1.0&q=85" 
-                    alt="GENIAL Saint-Germain - Terrasse avec parasols"
+                    src="https://images.unsplash.com/photo-1622076356935-900292e7019a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwxfHxtYXJrZXQlMjBzdG9yZWZyb250fGVufDB8fHx8MTc1MjU3NjY3N3ww&ixlib=rb-4.1.0&q=85" 
+                    alt="GENIAL Saint-Germain - Terrasse avec parasols bleus"
                     className="w-full h-40 object-cover"
                   />
                   {/* Overlay au survol */}
