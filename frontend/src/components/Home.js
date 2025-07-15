@@ -294,7 +294,7 @@ const Home = () => {
                 <div className="relative">
                   <img 
                     src="https://images.unsplash.com/photo-1622076356935-900292e7019a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwxfHxtYXJrZXQlMjBzdG9yZWZyb250fGVufDB8fHx8MTc1MjU3NjY3N3ww&ixlib=rb-4.1.0&q=85" 
-                    alt="GENIAL Saint-Germain - Terrasse avec parasols"
+                    alt="GENIAL Saint-Germain - Terrasse avec parasols bleus"
                     className="w-full h-40 object-cover"
                   />
                   {/* Overlay au survol */}
