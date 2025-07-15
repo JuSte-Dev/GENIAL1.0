@@ -101,3 +101,48 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+user_problem_statement: "Integrate real images for the 'Nos établissements' section, replacing the current SVG placeholders with actual photos of the four Parisian establishments (Saint-Germain, Marais, Montmartre, Bastille)."
+
+frontend:
+  - task: "Replace SVG placeholders with actual establishment images"
+    implemented: false
+    working: "NA"
+    file: "/app/frontend/src/components/Home.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Task identified. Need to replace 4 SVG placeholders in 'Nos établissements' section (lines 271-450) with user-provided images of GENIAL establishments."
+
+backend:
+  - task: "No backend changes required"
+    implemented: true
+    working: true
+    file: "N/A"
+    stuck_count: 0
+    priority: "low"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "This task only requires frontend image replacement, no backend changes needed."
+
+metadata:
+  created_by: "main_agent"
+  version: "1.0"
+  test_sequence: 0
+  run_ui: false
+
+test_plan:
+  current_focus:
+    - "Replace SVG placeholders with actual establishment images"
+  stuck_tasks: []
+  test_all: false
+  test_priority: "high_first"
+
+agent_communication:
+  - agent: "main"
+    message: "Starting task to replace SVG placeholders in 'Nos établissements' section with user-provided images. User has provided 4 images of GENIAL establishments that need to be integrated into the existing layout without changing any design or structure."
