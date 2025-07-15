@@ -550,41 +550,166 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* Témoignages clients - Défilement horizontal */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Ce que disent nos clients</h2>
-            <p className="text-xl text-gray-600">
-              Découvrez les témoignages de ceux qui ont adopté GENIAL
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-primary mb-4">Ce que disent nos clients</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Découvrez les expériences de nos clients fidèles
             </p>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="card hover:shadow-xl transition-all duration-300">
-                <div className="card-body">
-                  <div className="flex items-center mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                    ))}
+          
+          {/* Carrousel de témoignages */}
+          <div className="relative overflow-hidden">
+            <div className="flex animate-scroll space-x-6">
+              {/* Témoignage 1 */}
+              <div className="flex-shrink-0 w-80 bg-gray-50 rounded-lg p-6 shadow-md">
+                <div className="flex items-center mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current mr-1" />
+                  ))}
+                </div>
+                <p className="text-gray-700 mb-4">
+                  "Une expérience incroyable ! Les produits sont d'une qualité exceptionnelle et l'atelier cuisine était fantastique. Je recommande vivement !"
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-neon-blue rounded-full flex items-center justify-center text-white font-bold mr-3">
+                    SM
                   </div>
-                  <p className="text-gray-700 mb-6 italic">
-                    "{testimonial.content}"
-                  </p>
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
-                      <span className="text-gray-600 font-semibold">
-                        {testimonial.name.split(' ').map(n => n[0]).join('')}
-                      </span>
-                    </div>
-                    <div>
-                      <p className="font-semibold">{testimonial.name}</p>
-                      <p className="text-sm text-gray-600">{testimonial.role}</p>
-                    </div>
+                  <div>
+                    <p className="font-semibold text-gray-900">Sophie Martin</p>
+                    <p className="text-sm text-gray-500">Cliente fidèle</p>
                   </div>
                 </div>
               </div>
-            ))}
+              
+              {/* Témoignage 2 */}
+              <div className="flex-shrink-0 w-80 bg-gray-50 rounded-lg p-6 shadow-md">
+                <div className="flex items-center mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current mr-1" />
+                  ))}
+                </div>
+                <p className="text-gray-700 mb-4">
+                  "J'adore venir ici pour mes courses quotidiennes. L'équipe est formidable et les produits locaux sont un vrai délice."
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-neon-blue rounded-full flex items-center justify-center text-white font-bold mr-3">
+                    PD
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-900">Pierre Dubois</p>
+                    <p className="text-sm text-gray-500">Résident du quartier</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Témoignage 3 */}
+              <div className="flex-shrink-0 w-80 bg-gray-50 rounded-lg p-6 shadow-md">
+                <div className="flex items-center mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current mr-1" />
+                  ))}
+                </div>
+                <p className="text-gray-700 mb-4">
+                  "Les soirées dégustation de vins sont exceptionnelles. J'ai découvert des pépites et rencontré des passionnés !"
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-neon-blue rounded-full flex items-center justify-center text-white font-bold mr-3">
+                    CL
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-900">Claire Lefèvre</p>
+                    <p className="text-sm text-gray-500">Amatrice de vins</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Témoignage 4 */}
+              <div className="flex-shrink-0 w-80 bg-gray-50 rounded-lg p-6 shadow-md">
+                <div className="flex items-center mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current mr-1" />
+                  ))}
+                </div>
+                <p className="text-gray-700 mb-4">
+                  "Le concept est génial ! C'est bien plus qu'un simple marché, c'est un lieu de vie où l'on apprend et découvre."
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-neon-blue rounded-full flex items-center justify-center text-white font-bold mr-3">
+                    MR
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-900">Marc Robert</p>
+                    <p className="text-sm text-gray-500">Chef amateur</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Témoignage 5 */}
+              <div className="flex-shrink-0 w-80 bg-gray-50 rounded-lg p-6 shadow-md">
+                <div className="flex items-center mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current mr-1" />
+                  ))}
+                </div>
+                <p className="text-gray-700 mb-4">
+                  "Mes enfants adorent les ateliers cuisine du week-end. C'est éducatif et amusant, parfait pour les familles !"
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-neon-blue rounded-full flex items-center justify-center text-white font-bold mr-3">
+                    AB
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-900">Anne Berger</p>
+                    <p className="text-sm text-gray-500">Maman de famille</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Témoignage 6 */}
+              <div className="flex-shrink-0 w-80 bg-gray-50 rounded-lg p-6 shadow-md">
+                <div className="flex items-center mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current mr-1" />
+                  ))}
+                </div>
+                <p className="text-gray-700 mb-4">
+                  "La qualité des produits et le service client sont irréprochables. Je ne fais plus mes courses ailleurs !"
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-neon-blue rounded-full flex items-center justify-center text-white font-bold mr-3">
+                    JM
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-900">Jean Michel</p>
+                    <p className="text-sm text-gray-500">Gourmand passionné</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Dupliquer pour assurer le défilement continu */}
+              <div className="flex-shrink-0 w-80 bg-gray-50 rounded-lg p-6 shadow-md">
+                <div className="flex items-center mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current mr-1" />
+                  ))}
+                </div>
+                <p className="text-gray-700 mb-4">
+                  "Une expérience incroyable ! Les produits sont d'une qualité exceptionnelle et l'atelier cuisine était fantastique. Je recommande vivement !"
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-neon-blue rounded-full flex items-center justify-center text-white font-bold mr-3">
+                    SM
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-900">Sophie Martin</p>
+                    <p className="text-sm text-gray-500">Cliente fidèle</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
