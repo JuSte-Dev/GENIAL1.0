@@ -256,7 +256,300 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Nos établissements */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-primary mb-4">Nos établissements</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Découvrez nos 4 lieux d'exception dans Paris, chacun avec sa propre personnalité
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto mb-12">
+            {/* Établissement 1 - Saint-Germain */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <img 
+                src="/api/placeholder/400/300" 
+                alt="GENIAL Saint-Germain"
+                className="w-full h-48 object-cover"
+                style={{
+                  backgroundImage: `url('data:image/svg+xml;base64,${btoa(`
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+                      <rect width="400" height="300" fill="#f8f9fa"/>
+                      <rect x="0" y="0" width="400" height="60" fill="#1a1a1a"/>
+                      <text x="200" y="40" text-anchor="middle" fill="#0066ff" font-family="Arial" font-size="24" font-weight="bold">GENIAL</text>
+                      <text x="200" y="55" text-anchor="middle" fill="#0066ff" font-family="Arial" font-size="12">Market</text>
+                      <rect x="20" y="80" width="360" height="180" fill="#f0f0f0" stroke="#ddd"/>
+                      <circle cx="100" cy="140" r="15" fill="#ff6b6b"/>
+                      <circle cx="130" cy="140" r="15" fill="#4ecdc4"/>
+                      <circle cx="160" cy="140" r="15" fill="#45b7d1"/>
+                      <circle cx="200" cy="140" r="15" fill="#96ceb4"/>
+                      <circle cx="230" cy="140" r="15" fill="#feca57"/>
+                      <circle cx="260" cy="140" r="15" fill="#ff9ff3"/>
+                      <rect x="50" y="200" width="80" height="40" fill="#0066ff" rx="5"/>
+                      <rect x="150" y="200" width="80" height="40" fill="#0066ff" rx="5"/>
+                      <rect x="250" y="200" width="80" height="40" fill="#0066ff" rx="5"/>
+                      <text x="200" y="280" text-anchor="middle" fill="#666" font-family="Arial" font-size="14">Produits frais • Café • Épicerie fine</text>
+                    </svg>
+                  `)}`
+                }}
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-primary mb-2">GENIAL Saint-Germain</h3>
+                <p className="text-gray-600 mb-3">
+                  <MapPin className="w-4 h-4 inline mr-2" />
+                  45 rue de Rennes, 75006 Paris
+                </p>
+                <p className="text-sm text-gray-500 mb-4">
+                  Notre flagship store au cœur de Saint-Germain. Espace dégustation, ateliers cuisine et terrasse.
+                </p>
+                <div className="text-sm text-gray-600">
+                  <Clock className="w-4 h-4 inline mr-1" />
+                  7h00 - 22h30
+                </div>
+              </div>
+            </div>
+
+            {/* Établissement 2 - Marais */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <img 
+                src="/api/placeholder/400/300" 
+                alt="GENIAL Marais"
+                className="w-full h-48 object-cover"
+                style={{
+                  backgroundImage: `url('data:image/svg+xml;base64,${btoa(`
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+                      <rect width="400" height="300" fill="#2c3e50"/>
+                      <rect x="0" y="100" width="400" height="200" fill="#34495e"/>
+                      <rect x="50" y="120" width="300" height="160" fill="#1a1a1a" rx="10"/>
+                      <rect x="70" y="140" width="260" height="120" fill="#f8f9fa"/>
+                      <text x="200" y="90" text-anchor="middle" fill="#0066ff" font-family="Arial" font-size="32" font-weight="bold">GENIAL</text>
+                      <text x="200" y="110" text-anchor="middle" fill="#0066ff" font-family="Arial" font-size="14">Market</text>
+                      <rect x="90" y="160" width="40" height="80" fill="#e74c3c"/>
+                      <rect x="140" y="160" width="40" height="80" fill="#f39c12"/>
+                      <rect x="190" y="160" width="40" height="80" fill="#2ecc71"/>
+                      <rect x="240" y="160" width="40" height="80" fill="#3498db"/>
+                      <rect x="290" y="160" width="40" height="80" fill="#9b59b6"/>
+                      <circle cx="60" cy="60" r="8" fill="#f1c40f"/>
+                      <circle cx="340" cy="60" r="8" fill="#f1c40f"/>
+                      <text x="200" y="280" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12">Ambiance historique • Produits artisanaux</text>
+                    </svg>
+                  `)}`
+                }}
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-primary mb-2">GENIAL Marais</h3>
+                <p className="text-gray-600 mb-3">
+                  <MapPin className="w-4 h-4 inline mr-2" />
+                  23 rue des Rosiers, 75004 Paris
+                </p>
+                <p className="text-sm text-gray-500 mb-4">
+                  Dans un cadre historique du Marais. Spécialités artisanales et produits du terroir français.
+                </p>
+                <div className="text-sm text-gray-600">
+                  <Clock className="w-4 h-4 inline mr-1" />
+                  7h00 - 22h30
+                </div>
+              </div>
+            </div>
+
+            {/* Établissement 3 - Montmartre */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <img 
+                src="/api/placeholder/400/300" 
+                alt="GENIAL Montmartre"
+                className="w-full h-48 object-cover"
+                style={{
+                  backgroundImage: `url('data:image/svg+xml;base64,${btoa(`
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+                      <rect width="400" height="300" fill="#ecf0f1"/>
+                      <rect x="0" y="0" width="400" height="80" fill="#2c3e50"/>
+                      <rect x="50" y="20" width="300" height="40" fill="#0066ff" rx="5"/>
+                      <text x="200" y="45" text-anchor="middle" fill="#fff" font-family="Arial" font-size="20" font-weight="bold">GENIAL Market</text>
+                      <rect x="20" y="100" width="360" height="160" fill="#fff" stroke="#bdc3c7" stroke-width="2"/>
+                      <rect x="40" y="120" width="80" height="60" fill="#e8f5e8" rx="5"/>
+                      <rect x="140" y="120" width="80" height="60" fill="#fff5e6" rx="5"/>
+                      <rect x="240" y="120" width="80" height="60" fill="#f0f8ff" rx="5"/>
+                      <rect x="40" y="200" width="80" height="40" fill="#8b4513" rx="5"/>
+                      <rect x="140" y="200" width="80" height="40" fill="#8b4513" rx="5"/>
+                      <rect x="240" y="200" width="80" height="40" fill="#8b4513" rx="5"/>
+                      <circle cx="60" cy="140" r="8" fill="#27ae60"/>
+                      <circle cx="100" cy="140" r="8" fill="#27ae60"/>
+                      <circle cx="160" cy="140" r="8" fill="#f39c12"/>
+                      <circle cx="200" cy="140" r="8" fill="#f39c12"/>
+                      <circle cx="260" cy="140" r="8" fill="#3498db"/>
+                      <circle cx="300" cy="140" r="8" fill="#3498db"/>
+                      <text x="200" y="280" text-anchor="middle" fill="#2c3e50" font-family="Arial" font-size="12">Charme montmartrois • Vue panoramique</text>
+                    </svg>
+                  `)}`
+                }}
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-primary mb-2">GENIAL Montmartre</h3>
+                <p className="text-gray-600 mb-3">
+                  <MapPin className="w-4 h-4 inline mr-2" />
+                  8 place du Tertre, 75018 Paris
+                </p>
+                <p className="text-sm text-gray-500 mb-4">
+                  Ambiance bohème au pied du Sacré-Cœur. Terrasse avec vue et spécialités locales.
+                </p>
+                <div className="text-sm text-gray-600">
+                  <Clock className="w-4 h-4 inline mr-1" />
+                  7h00 - 22h30
+                </div>
+              </div>
+            </div>
+
+            {/* Établissement 4 - Bastille */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <img 
+                src="/api/placeholder/400/300" 
+                alt="GENIAL Bastille"
+                className="w-full h-48 object-cover"
+                style={{
+                  backgroundImage: `url('data:image/svg+xml;base64,${btoa(`
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+                      <rect width="400" height="300" fill="#34495e"/>
+                      <rect x="0" y="200" width="400" height="100" fill="#2c3e50"/>
+                      <rect x="50" y="50" width="300" height="200" fill="#1a1a1a" rx="10"/>
+                      <rect x="60" y="30" width="280" height="40" fill="#0066ff" rx="5"/>
+                      <text x="200" y="55" text-anchor="middle" fill="#fff" font-family="Arial" font-size="24" font-weight="bold">GENIAL</text>
+                      <rect x="80" y="80" width="240" height="120" fill="#f8f9fa"/>
+                      <rect x="100" y="100" width="50" height="30" fill="#e74c3c"/>
+                      <rect x="175" y="100" width="50" height="30" fill="#f39c12"/>
+                      <rect x="250" y="100" width="50" height="30" fill="#2ecc71"/>
+                      <rect x="100" y="140" width="50" height="30" fill="#3498db"/>
+                      <rect x="175" y="140" width="50" height="30" fill="#9b59b6"/>
+                      <rect x="250" y="140" width="50" height="30" fill="#1abc9c"/>
+                      <rect x="90" y="220" width="60" height="20" fill="#8b4513" rx="3"/>
+                      <rect x="170" y="220" width="60" height="20" fill="#8b4513" rx="3"/>
+                      <rect x="250" y="220" width="60" height="20" fill="#8b4513" rx="3"/>
+                      <circle cx="365" cy="35" r="5" fill="#f1c40f"/>
+                      <circle cx="380" cy="35" r="5" fill="#f1c40f"/>
+                      <circle cx="395" cy="35" r="5" fill="#f1c40f"/>
+                      <text x="200" y="280" text-anchor="middle" fill="#bdc3c7" font-family="Arial" font-size="12">Quartier branché • Concept moderne</text>
+                    </svg>
+                  `)}`
+                }}
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-primary mb-2">GENIAL Bastille</h3>
+                <p className="text-gray-600 mb-3">
+                  <MapPin className="w-4 h-4 inline mr-2" />
+                  12 rue de la Roquette, 75011 Paris
+                </p>
+                <p className="text-sm text-gray-500 mb-4">
+                  Concept moderne dans le quartier branché. Espace co-working et événements nocturnes.
+                </p>
+                <div className="text-sm text-gray-600">
+                  <Clock className="w-4 h-4 inline mr-1" />
+                  7h00 - 22h30
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Carte de Paris */}
+          <div className="bg-white rounded-lg p-6 shadow-lg">
+            <h3 className="text-2xl font-bold text-primary mb-4 text-center">Trouvez-nous dans Paris</h3>
+            <div className="relative h-96 bg-gray-100 rounded-lg overflow-hidden">
+              <div 
+                className="w-full h-full bg-cover bg-center"
+                style={{
+                  backgroundImage: `url('data:image/svg+xml;base64,${btoa(`
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+                      <rect width="800" height="400" fill="#e8f4f8"/>
+                      <path d="M100 200 Q200 150 300 200 T500 200 Q600 150 700 200" stroke="#3498db" stroke-width="3" fill="none"/>
+                      <path d="M150 100 Q250 50 350 100 T550 100 Q650 50 750 100" stroke="#2980b9" stroke-width="2" fill="none"/>
+                      <path d="M50 300 Q150 250 250 300 T450 300 Q550 250 650 300" stroke="#3498db" stroke-width="2" fill="none"/>
+                      
+                      <!-- Arrondissements -->
+                      <circle cx="200" cy="150" r="80" fill="#bdc3c7" opacity="0.3"/>
+                      <circle cx="300" cy="200" r="60" fill="#95a5a6" opacity="0.3"/>
+                      <circle cx="500" cy="180" r="90" fill="#7f8c8d" opacity="0.3"/>
+                      <circle cx="600" cy="220" r="70" fill="#95a5a6" opacity="0.3"/>
+                      
+                      <!-- Établissements GENIAL -->
+                      <circle cx="180" cy="160" r="8" fill="#0066ff" stroke="#fff" stroke-width="2"/>
+                      <text x="180" y="145" text-anchor="middle" fill="#0066ff" font-family="Arial" font-size="10" font-weight="bold">Saint-Germain</text>
+                      
+                      <circle cx="280" cy="190" r="8" fill="#0066ff" stroke="#fff" stroke-width="2"/>
+                      <text x="280" y="175" text-anchor="middle" fill="#0066ff" font-family="Arial" font-size="10" font-weight="bold">Marais</text>
+                      
+                      <circle cx="480" cy="120" r="8" fill="#0066ff" stroke="#fff" stroke-width="2"/>
+                      <text x="480" y="105" text-anchor="middle" fill="#0066ff" font-family="Arial" font-size="10" font-weight="bold">Montmartre</text>
+                      
+                      <circle cx="520" cy="200" r="8" fill="#0066ff" stroke="#fff" stroke-width="2"/>
+                      <text x="520" y="185" text-anchor="middle" fill="#0066ff" font-family="Arial" font-size="10" font-weight="bold">Bastille</text>
+                      
+                      <!-- Landmarks -->
+                      <rect x="350" y="160" width="8" height="15" fill="#8b4513"/>
+                      <polygon points="354,160 350,150 358,150" fill="#e74c3c"/>
+                      <text x="354" y="145" text-anchor="middle" fill="#8b4513" font-family="Arial" font-size="8">Tour Eiffel</text>
+                      
+                      <rect x="450" y="100" width="12" height="20" fill="#ecf0f1"/>
+                      <polygon points="456,100 450,90 462,90" fill="#ecf0f1"/>
+                      <text x="456" y="85" text-anchor="middle" fill="#7f8c8d" font-family="Arial" font-size="8">Sacré-Cœur</text>
+                      
+                      <rect x="550" y="180" width="15" height="25" fill="#f39c12"/>
+                      <text x="557" y="175" text-anchor="middle" fill="#f39c12" font-family="Arial" font-size="8">Bastille</text>
+                      
+                      <text x="400" y="350" text-anchor="middle" fill="#34495e" font-family="Arial" font-size="16" font-weight="bold">PARIS - 4 établissements GENIAL</text>
+                      
+                      <!-- Légende -->
+                      <rect x="20" y="20" width="150" height="60" fill="#fff" opacity="0.9" rx="5"/>
+                      <circle cx="35" cy="35" r="4" fill="#0066ff"/>
+                      <text x="50" y="39" fill="#2c3e50" font-family="Arial" font-size="12">GENIAL Market</text>
+                      <rect x="30" y="45" width="6" height="10" fill="#8b4513"/>
+                      <text x="50" y="54" fill="#2c3e50" font-family="Arial" font-size="12">Monuments</text>
+                      <path d="M30 62 Q35 58 40 62" stroke="#3498db" stroke-width="2" fill="none"/>
+                      <text x="50" y="66" fill="#2c3e50" font-family="Arial" font-size="12">Seine</text>
+                    </svg>
+                  `)}`
+                }}
+              />
+              
+              {/* Points interactifs */}
+              <div className="absolute top-20 left-36 group">
+                <div className="w-4 h-4 bg-neon-blue rounded-full border-2 border-white cursor-pointer transform hover:scale-110 transition-transform"></div>
+                <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="bg-black text-white px-3 py-1 rounded text-sm whitespace-nowrap">
+                    Saint-Germain • 45 rue de Rennes
+                  </div>
+                </div>
+              </div>
+              
+              <div className="absolute top-32 left-56 group">
+                <div className="w-4 h-4 bg-neon-blue rounded-full border-2 border-white cursor-pointer transform hover:scale-110 transition-transform"></div>
+                <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="bg-black text-white px-3 py-1 rounded text-sm whitespace-nowrap">
+                    Marais • 23 rue des Rosiers
+                  </div>
+                </div>
+              </div>
+              
+              <div className="absolute top-12 right-80 group">
+                <div className="w-4 h-4 bg-neon-blue rounded-full border-2 border-white cursor-pointer transform hover:scale-110 transition-transform"></div>
+                <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="bg-black text-white px-3 py-1 rounded text-sm whitespace-nowrap">
+                    Montmartre • 8 place du Tertre
+                  </div>
+                </div>
+              </div>
+              
+              <div className="absolute top-32 right-56 group">
+                <div className="w-4 h-4 bg-neon-blue rounded-full border-2 border-white cursor-pointer transform hover:scale-110 transition-transform"></div>
+                <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="bg-black text-white px-3 py-1 rounded text-sm whitespace-nowrap">
+                    Bastille • 12 rue de la Roquette
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
