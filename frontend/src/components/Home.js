@@ -259,102 +259,128 @@ const Home = () => {
       {/* Nos établissements */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-4">Découvrez nos 4 adresses à Paris</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-primary mb-4">Découvrez nos 4 adresses à Paris</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Chacune avec sa propre personnalité et son ambiance unique
             </p>
           </div>
           
-          <div className="grid grid-cols-2 gap-8 max-w-6xl mx-auto mb-12">
-            {/* Établissement 1 - Saint-Germain */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img 
-                src="https://images.unsplash.com/photo-1631021967261-c57ee4dfa9bb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHx2ZWdldGFibGUlMjBiYXNrZXR8ZW58MHx8fHwxNzUyNDIxNTY2fDA&ixlib=rb-4.1.0&q=85" 
-                alt="GENIAL Saint-Germain - Terrasse avec parasols"
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-primary mb-2">GENIAL Saint-Germain</h3>
-                <p className="text-gray-600 mb-3">
-                  <MapPin className="w-4 h-4 inline mr-2" />
-                  45 rue de Rennes, 75006 Paris
-                </p>
-                <p className="text-sm text-gray-500 mb-4">
-                  Notre flagship store au cœur de Saint-Germain. Espace dégustation, ateliers cuisine et terrasse.
-                </p>
-                <div className="text-sm text-gray-600">
-                  <Clock className="w-4 h-4 inline mr-1" />
-                  7h00 - 22h30
+          {/* Carrousel des établissements */}
+          <div className="relative overflow-hidden mb-12">
+            <div className="flex animate-scroll space-x-6">
+              {/* Établissement 1 - Saint-Germain */}
+              <div className="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                <img 
+                  src="https://images.unsplash.com/photo-1631021967261-c57ee4dfa9bb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHx2ZWdldGFibGUlMjBiYXNrZXR8ZW58MHx8fHwxNzUyNDIxNTY2fDA&ixlib=rb-4.1.0&q=85" 
+                  alt="GENIAL Saint-Germain - Terrasse avec parasols"
+                  className="w-full h-40 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="text-lg font-bold text-primary mb-2">GENIAL Saint-Germain</h3>
+                  <p className="text-gray-600 mb-2 text-sm">
+                    <MapPin className="w-4 h-4 inline mr-1" />
+                    45 rue de Rennes, 75006 Paris
+                  </p>
+                  <p className="text-xs text-gray-500 mb-3">
+                    Notre flagship store au cœur de Saint-Germain. Espace dégustation, ateliers cuisine et terrasse.
+                  </p>
+                  <div className="text-xs text-gray-600">
+                    <Clock className="w-3 h-3 inline mr-1" />
+                    7h00 - 22h30
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {/* Établissement 2 - Marais */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img 
-                src="https://images.unsplash.com/photo-1675306408031-a9aad9f23308?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBiZWFuc3xlbnwwfHx8fDE3NTI1MTExMjF8MA&ixlib=rb-4.1.0&q=85" 
-                alt="GENIAL Marais - Storefront de nuit"
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-primary mb-2">GENIAL Marais</h3>
-                <p className="text-gray-600 mb-3">
-                  <MapPin className="w-4 h-4 inline mr-2" />
-                  23 rue des Rosiers, 75004 Paris
-                </p>
-                <p className="text-sm text-gray-500 mb-4">
-                  Dans un cadre historique du Marais. Spécialités artisanales et produits du terroir français.
-                </p>
-                <div className="text-sm text-gray-600">
-                  <Clock className="w-4 h-4 inline mr-1" />
-                  7h00 - 22h30
+              {/* Établissement 2 - Marais */}
+              <div className="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                <img 
+                  src="https://images.unsplash.com/photo-1675306408031-a9aad9f23308?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBiZWFuc3xlbnwwfHx8fDE3NTI1MTExMjF8MA&ixlib=rb-4.1.0&q=85" 
+                  alt="GENIAL Marais - Storefront de nuit"
+                  className="w-full h-40 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="text-lg font-bold text-primary mb-2">GENIAL Marais</h3>
+                  <p className="text-gray-600 mb-2 text-sm">
+                    <MapPin className="w-4 h-4 inline mr-1" />
+                    23 rue des Rosiers, 75004 Paris
+                  </p>
+                  <p className="text-xs text-gray-500 mb-3">
+                    Dans un cadre historique du Marais. Spécialités artisanales et produits du terroir français.
+                  </p>
+                  <div className="text-xs text-gray-600">
+                    <Clock className="w-3 h-3 inline mr-1" />
+                    7h00 - 22h30
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {/* Établissement 3 - Montmartre */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img 
-                src="https://images.unsplash.com/photo-1579113800032-c38bd7635818?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMHZlZ2V0YWJsZXN8ZW58MHx8fHwxNzUyNTA1MDI0fDA&ixlib=rb-4.1.0&q=85" 
-                alt="GENIAL Montmartre - Intérieur avec clients"
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-primary mb-2">GENIAL Montmartre</h3>
-                <p className="text-gray-600 mb-3">
-                  <MapPin className="w-4 h-4 inline mr-2" />
-                  8 place du Tertre, 75018 Paris
-                </p>
-                <p className="text-sm text-gray-500 mb-4">
-                  Ambiance bohème au pied du Sacré-Cœur. Terrasse avec vue et spécialités locales.
-                </p>
-                <div className="text-sm text-gray-600">
-                  <Clock className="w-4 h-4 inline mr-1" />
-                  7h00 - 22h30
+              {/* Établissement 3 - Montmartre */}
+              <div className="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                <img 
+                  src="https://images.unsplash.com/photo-1579113800032-c38bd7635818?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMHZlZ2V0YWJsZXN8ZW58MHx8fHwxNzUyNTA1MDI0fDA&ixlib=rb-4.1.0&q=85" 
+                  alt="GENIAL Montmartre - Intérieur avec clients"
+                  className="w-full h-40 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="text-lg font-bold text-primary mb-2">GENIAL Montmartre</h3>
+                  <p className="text-gray-600 mb-2 text-sm">
+                    <MapPin className="w-4 h-4 inline mr-1" />
+                    8 place du Tertre, 75018 Paris
+                  </p>
+                  <p className="text-xs text-gray-500 mb-3">
+                    Ambiance bohème au pied du Sacré-Cœur. Terrasse avec vue et spécialités locales.
+                  </p>
+                  <div className="text-xs text-gray-600">
+                    <Clock className="w-3 h-3 inline mr-1" />
+                    7h00 - 22h30
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {/* Établissement 4 - Bastille */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img 
-                src="https://images.unsplash.com/photo-1516154767575-2146adebdf32?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHx3aW5lJTIwYm90dGxlc3xlbnwwfHx8fDE3NTI1MDUwODB8MA&ixlib=rb-4.1.0&q=85" 
-                alt="GENIAL Bastille - Intérieur avec fruits/légumes"
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-primary mb-2">GENIAL Bastille</h3>
-                <p className="text-gray-600 mb-3">
-                  <MapPin className="w-4 h-4 inline mr-2" />
-                  12 rue de la Roquette, 75011 Paris
-                </p>
-                <p className="text-sm text-gray-500 mb-4">
-                  Concept moderne dans le quartier branché. Espace co-working et événements nocturnes.
-                </p>
-                <div className="text-sm text-gray-600">
-                  <Clock className="w-4 h-4 inline mr-1" />
-                  7h00 - 22h30
+              {/* Établissement 4 - Bastille */}
+              <div className="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                <img 
+                  src="https://images.unsplash.com/photo-1516154767575-2146adebdf32?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHx3aW5lJTIwYm90dGxlc3xlbnwwfHx8fDE3NTI1MDUwODB8MA&ixlib=rb-4.1.0&q=85" 
+                  alt="GENIAL Bastille - Intérieur avec fruits/légumes"
+                  className="w-full h-40 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="text-lg font-bold text-primary mb-2">GENIAL Bastille</h3>
+                  <p className="text-gray-600 mb-2 text-sm">
+                    <MapPin className="w-4 h-4 inline mr-1" />
+                    12 rue de la Roquette, 75011 Paris
+                  </p>
+                  <p className="text-xs text-gray-500 mb-3">
+                    Concept moderne dans le quartier branché. Espace co-working et événements nocturnes.
+                  </p>
+                  <div className="text-xs text-gray-600">
+                    <Clock className="w-3 h-3 inline mr-1" />
+                    7h00 - 22h30
+                  </div>
+                </div>
+              </div>
+              
+              {/* Dupliquer pour défilement continu */}
+              <div className="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                <img 
+                  src="https://images.unsplash.com/photo-1631021967261-c57ee4dfa9bb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHx2ZWdldGFibGUlMjBiYXNrZXR8ZW58MHx8fHwxNzUyNDIxNTY2fDA&ixlib=rb-4.1.0&q=85" 
+                  alt="GENIAL Saint-Germain - Terrasse avec parasols"
+                  className="w-full h-40 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="text-lg font-bold text-primary mb-2">GENIAL Saint-Germain</h3>
+                  <p className="text-gray-600 mb-2 text-sm">
+                    <MapPin className="w-4 h-4 inline mr-1" />
+                    45 rue de Rennes, 75006 Paris
+                  </p>
+                  <p className="text-xs text-gray-500 mb-3">
+                    Notre flagship store au cœur de Saint-Germain. Espace dégustation, ateliers cuisine et terrasse.
+                  </p>
+                  <div className="text-xs text-gray-600">
+                    <Clock className="w-3 h-3 inline mr-1" />
+                    7h00 - 22h30
+                  </div>
                 </div>
               </div>
             </div>
