@@ -316,33 +316,9 @@ const Home = () => {
             {/* Établissement 3 - Montmartre */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <img 
-                src="/api/placeholder/400/300" 
+                src="https://images.unsplash.com/photo-1667388969250-1c7220bf3f37" 
                 alt="GENIAL Montmartre"
                 className="w-full h-48 object-cover"
-                style={{
-                  backgroundImage: `url('data:image/svg+xml;base64,${btoa(`
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
-                      <rect width="400" height="300" fill="#ecf0f1"/>
-                      <rect x="0" y="0" width="400" height="80" fill="#2c3e50"/>
-                      <rect x="50" y="20" width="300" height="40" fill="#0066ff" rx="5"/>
-                      <text x="200" y="45" text-anchor="middle" fill="#fff" font-family="Arial" font-size="20" font-weight="bold">GENIAL Market</text>
-                      <rect x="20" y="100" width="360" height="160" fill="#fff" stroke="#bdc3c7" stroke-width="2"/>
-                      <rect x="40" y="120" width="80" height="60" fill="#e8f5e8" rx="5"/>
-                      <rect x="140" y="120" width="80" height="60" fill="#fff5e6" rx="5"/>
-                      <rect x="240" y="120" width="80" height="60" fill="#f0f8ff" rx="5"/>
-                      <rect x="40" y="200" width="80" height="40" fill="#8b4513" rx="5"/>
-                      <rect x="140" y="200" width="80" height="40" fill="#8b4513" rx="5"/>
-                      <rect x="240" y="200" width="80" height="40" fill="#8b4513" rx="5"/>
-                      <circle cx="60" cy="140" r="8" fill="#27ae60"/>
-                      <circle cx="100" cy="140" r="8" fill="#27ae60"/>
-                      <circle cx="160" cy="140" r="8" fill="#f39c12"/>
-                      <circle cx="200" cy="140" r="8" fill="#f39c12"/>
-                      <circle cx="260" cy="140" r="8" fill="#3498db"/>
-                      <circle cx="300" cy="140" r="8" fill="#3498db"/>
-                      <text x="200" y="280" text-anchor="middle" fill="#2c3e50" font-family="Arial" font-size="12">Charme montmartrois • Vue panoramique</text>
-                    </svg>
-                  `)}`
-                }}
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-primary mb-2">GENIAL Montmartre</h3>
