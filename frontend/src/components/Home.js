@@ -212,7 +212,7 @@ const Home = () => {
           {/* 5. Expérience gastronomique - 18h30-22h00 */}
           <div className="relative h-screen group cursor-pointer overflow-hidden" style={{border: 'none', margin: '0px', padding: '0px'}}>
             <img 
-              src="https://images.unsplash.com/photo-1556909709-f3fb29b3892c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
+              src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxfDB8MXxhbGx8fHx8fHx8fHwxNjk4MzA0MjY4&ixlib=rb-4.0.3&q=85&w=1200&h=1200"
               alt="Expérience gastronomique - Mains préparant sur table bois"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
