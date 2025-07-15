@@ -407,7 +407,7 @@ const Home = () => {
                       
                       <text x="400" y="350" text-anchor="middle" fill="#34495e" font-family="Arial" font-size="16" font-weight="bold">PARIS - 4 établissements GENIAL</text>
                       
-                      <!-- Légende -->
+                      <!-- Legende -->
                       <rect x="20" y="20" width="150" height="60" fill="#fff" opacity="0.9" rx="5"/>
                       <circle cx="35" cy="35" r="4" fill="#0066ff"/>
                       <text x="50" y="39" fill="#2c3e50" font-family="Arial" font-size="12">GENIAL Market</text>
